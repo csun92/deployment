@@ -1,0 +1,172 @@
+Error	121	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKIOImageBaseGccXML
+Error	122	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKIOImageBaseIdx
+Error	123	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKSpatialObjectsGccXML
+Error	124	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKSpatialObjectsIdx
+Error	217	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKIOTIFFGccXML
+Error	230	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKIOIPLGccXML
+Error	231	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKIOImageBaseSwig
+Error	233	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKIOVTKGccXML
+Error	234	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKIOTIFFIdx
+Error	235	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKIOStimulateGccXML
+Error	236	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKIOPNGGccXML
+Error	237	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKIONRRDGccXML
+Error	238	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKIONIFTIGccXML
+Error	239	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKIOMetaGccXML
+Error	240	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKIOJPEGGccXML
+Error	241	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKIOGIPLGccXML
+Error	242	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKIOIPLIdx
+Error	243	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKIOGDCMGccXML
+Error	245	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKIOBioRadGccXML
+Error	251	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKIOLSMGccXML
+Error	260	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKWatershedsGccXML
+Error	261	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKSpatialObjectsSwig
+Error	275	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKIOBMPIdx
+Error	276	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKIOBioRadIdx
+Error	277	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKIOGEIdx
+Error	278	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKIOHDF5GccXML
+Error	279	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKIOIPLSwig
+Error	280	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKIOJPEGIdx
+Error	281	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKIOLSMIdx
+Error	282	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKIOMRCGccXML
+Error	283	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKImageStatisticsSwig
+Error	284	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKIOGIPLIdx
+Error	285	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKIOGDCMIdx
+Error	286	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKIONRRDIdx
+Error	287	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKIOMetaIdx
+Error	288	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKIORAWGccXML
+Error	289	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKIOSiemensGccXML
+Error	290	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKIOSpatialObjectsGccXML
+Error	291	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKIOStimulateIdx
+Error	292	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKIOTIFFSwig
+Error	293	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKIOPNGIdx
+Error	294	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKIOVTKIdx
+Error	295	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKIONIFTIIdx
+Error	296	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKQuadEdgeMeshFilteringGccXML
+Error	297	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKIOGDCMSwig
+Error	298	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKIONRRDSwig
+Error	299	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKIOSiemensIdx
+Error	301	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKQuadEdgeMeshFilteringIdx
+Error	302	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKIONIFTISwig
+Error	303	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKWatershedsIdx
+Error	305	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKIOSpatialObjectsIdx
+Error	306	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKIOMetaSwig
+Error	307	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKImageIntensitySwig
+Error	308	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKIOStimulateSwig
+Error	310	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKThresholdingSwig
+Error	311	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKImageLabelSwig
+Error	312	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKNarrowBandSwig
+Error	313	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKConnectedComponentsSwig
+Error	314	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKImageGradientSwig
+Error	315	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKDisplacementFieldSwig
+Error	316	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKConvolutionSwig
+Error	317	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKImageCompareSwig
+Error	318	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKFastMarchingSwig
+Error	319	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKImageFeatureSwig
+Error	320	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKIOBMPSwig
+Error	321	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKIOLSMSwig
+Error	322	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKIOMRCIdx
+Error	323	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKIOBioRadSwig
+Error	324	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKIOPNGSwig
+Error	325	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKMathematicalMorphologySwig
+Error	326	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKIOGESwig
+Error	327	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKIOGIPLSwig
+Error	330	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKIOJPEGSwig
+Error	331	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKRegistrationCommonSwig
+Error	332	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKIOTransformBaseSwig
+Error	333	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKIOHDF5Idx
+Error	334	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKIOHDF5Swig
+Error	335	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKPDEDeformableRegistrationSwig
+Error	336	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKIOMRCSwig
+Error	337	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKOptimizersv4Swig
+Error	338	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKLabelVotingSwig
+Error	339	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKRegionGrowingSwig
+Error	340	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKIOSpatialObjectsSwig
+Error	341	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKWatershedsSwig
+Error	342	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKQuadEdgeMeshFilteringSwig
+Error	343	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKIOSiemensSwig
+Error	344	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKDeconvolutionSwig
+Error	345	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKClassifiersSwig
+Error	346	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKIORAWSwig
+Error	348	error LNK1104: cannot open file 'python27_d.lib'	F:\workspace\ITK-default\ITK-build\Wrapping\Generators\Python\PyBase\LINK	ITKPyBasePython
+Error	349	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKLabelMapSwig
+Error	350	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKIOVTKSwig
+Error	351	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKBinaryMathematicalMorphologySwig
+Error	352	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKTestKernelSwig
+Error	353	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKIOPNGPython
+Error	354	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKIONRRDPython
+Error	355	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKImageFusionSwig
+Error	356	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKIONIFTIPython
+Error	357	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKIORAWPython
+Error	358	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKDistanceMapSwig
+Error	359	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKLabelVotingPython
+Error	360	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKIOSpatialObjectsPython
+Error	361	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKIOMetaPython
+Error	362	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKIOStimulatePython
+Error	363	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKIOMRCPython
+Error	364	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKSpatialObjectsPython
+Error	365	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKIOLSMPython
+Error	366	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKIOTIFFPython
+Error	367	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKIOJPEGPython
+Error	368	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKLabelMapPython
+Error	369	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKTestKernelPython
+Error	370	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKIOTransformBasePython
+Error	371	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKIOImageBasePython
+Error	372	error LNK1104: cannot open file 'python27_d.lib'	F:\workspace\ITK-default\ITK-build\Wrapping\Modules\ITKPath\LINK	ITKPathPython
+Error	373	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKIOHDF5Python
+Error	376	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKIOVTKPython
+Error	377	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKIOGIPLPython
+Error	378	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKIOGEPython
+Error	379	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKThresholdingPython
+Error	380	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKIOSiemensPython
+Error	381	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKIOGDCMPython
+Error	382	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKMathematicalMorphologyPython
+Error	383	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKImageComparePython
+Error	384	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKIOBioRadPython
+Error	385	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKIOBMPPython
+Error	386	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKLevelSetsSwig
+Error	387	error LNK1104: cannot open file 'python27_d.lib'	F:\workspace\ITK-default\ITK-build\Wrapping\Modules\ITKStatistics\LINK	ITKStatisticsPython
+Error	388	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKAntiAliasSwig
+Error	389	error LNK1104: cannot open file 'python27_d.lib'	F:\workspace\ITK-default\ITK-build\Wrapping\Modules\ITKImageCompose\LINK	ITKImageComposePython
+Error	390	error LNK1104: cannot open file 'python27_d.lib'	F:\workspace\ITK-default\ITK-build\Wrapping\Modules\ITKSmoothing\LINK	ITKSmoothingPython
+Error	391	error LNK1104: cannot open file 'python27_d.lib'	F:\workspace\ITK-default\ITK-build\Wrapping\Modules\ITKFiniteDifference\LINK	ITKFiniteDifferencePython
+Error	392	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKLevelSetsPython
+Error	393	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKRegistrationCommonPython
+Error	394	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKPDEDeformableRegistrationPython
+Error	395	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKFastMarchingPython
+Error	396	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKImageFeaturePython
+Error	397	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKImageStatisticsPython
+Error	412	error LNK1104: cannot open file 'python27_d.lib'	F:\workspace\ITK-default\ITK-build\Wrapping\Modules\ITKMesh\LINK	ITKMeshPython
+Error	413	error LNK1104: cannot open file 'python27_d.lib'	F:\workspace\ITK-default\ITK-build\Wrapping\Modules\ITKVTK\LINK	ITKVTKPython
+Error	422	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKDistanceMapPython
+Error	435	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKDisplacementFieldPython
+Error	436	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKRegionGrowingPython
+Error	437	error LNK1104: cannot open file 'python27_d.lib'	F:\workspace\ITK-default\ITK-build\Wrapping\Modules\ITKTransform\LINK	ITKTransformPython
+Error	438	error LNK1104: cannot open file 'python27_d.lib'	F:\workspace\ITK-default\ITK-build\Wrapping\Modules\ITKImageFilterBase\LINK	ITKImageFilterBasePython
+Error	439	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKOptimizersv4Python
+Error	440	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKDeconvolutionPython
+Error	441	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKImageFusionPython
+Error	442	error LNK1104: cannot open file 'python27_d.lib'	F:\workspace\ITK-default\ITK-build\Wrapping\Modules\ITKVoronoi\LINK	ITKVoronoiPython
+Error	443	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKConvolutionPython
+Error	444	error LNK1104: cannot open file 'python27_d.lib'	F:\workspace\ITK-default\ITK-build\Wrapping\Modules\ITKCurvatureFlow\LINK	ITKCurvatureFlowPython
+Error	445	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKNarrowBandPython
+Error	446	error LNK1104: cannot open file 'python27_d.lib'	F:\workspace\ITK-default\ITK-build\Wrapping\Modules\ITKImageFunction\LINK	ITKImageFunctionPython
+Error	447	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKWatershedsPython
+Error	448	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKImageGradientPython
+Error	449	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKConnectedComponentsPython
+Error	450	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKQuadEdgeMeshFilteringPython
+Error	451	error LNK1104: cannot open file 'python27_d.lib'	F:\workspace\ITK-default\ITK-build\Wrapping\Modules\ITKFFT\LINK	ITKFFTPython
+Error	452	error LNK1104: cannot open file 'python27_d.lib'	F:\workspace\ITK-default\ITK-build\Wrapping\Modules\ITKColormap\LINK	ITKColormapPython
+Error	453	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKClassifiersPython
+Error	454	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKBinaryMathematicalMorphologyPython
+Error	455	error LNK1104: cannot open file 'python27_d.lib'	F:\workspace\ITK-default\ITK-build\Wrapping\Modules\ITKImageSources\LINK	ITKImageSourcesPython
+Error	456	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKImageIntensityPython
+Error	457	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKAntiAliasPython
+Error	458	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKImageLabelPython
+Error	459	error LNK1104: cannot open file 'python27_d.lib'	F:\workspace\ITK-default\ITK-build\Wrapping\Generators\Python\PyUtils\LINK	ITKPyUtilsPython
+Error	460	error LNK1104: cannot open file 'python27_d.lib'	F:\workspace\ITK-default\ITK-build\Wrapping\Modules\ITKOptimizers\LINK	ITKOptimizersPython
+Error	461	error MSB6006: "cmd.exe" exited with code 1.	C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets	ITKIOIPLPython
+Error	535	error LNK1104: cannot open file 'python27_d.lib'	F:\workspace\ITK-default\ITK-build\Wrapping\Modules\ITKImageGrid\LINK	ITKImageGridPython
+Error	554	error LNK1104: cannot open file 'python27_d.lib'	F:\workspace\ITK-default\ITK-build\Wrapping\Modules\ITKAnisotropicSmoothing\LINK	ITKAnisotropicSmoothingPython
+Error	561	error LNK1104: cannot open file 'python27_d.lib'	F:\workspace\ITK-default\ITK-build\Wrapping\Modules\ITKCommon\LINK	ITKCommonPython
+Error	562	error LNK1104: cannot open file 'python27_d.lib'	F:\workspace\ITK-default\ITK-build\Wrapping\Modules\ITKEigen\LINK	ITKEigenPython
+Error	563	error LNK1104: cannot open file 'python27_d.lib'	F:\workspace\ITK-default\ITK-build\Wrapping\Modules\ITKQuadEdgeMesh\LINK	ITKQuadEdgeMeshPython
