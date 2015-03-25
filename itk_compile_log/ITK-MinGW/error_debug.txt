@@ -1,0 +1,27 @@
+TIFF compile error:
+
+replace by:
+#if defined(_WIN32) && ! defined(__MINGW32_VERSION)
+33.    struct _stat64 fs64;
+34.    if ( _stat64(filename, &fs64) )
+35.      {
+36.      // Both stat() and _stat64() return != 0
+37.      return 0;
+38.      }
+39.#else
+40.    return 0;
+41.#endif
+
+
+gcc error:
+change cmake build file
+/D_CRT_SECURE_NO_WARNINGS  -->  -D_CRT_SECURE_NO_WARNINGS
+
+
+
+itkNumericTraits errors:
+
+comment all lines with:
+_Num_base
+_Num_int_base
+_Num_float_base
