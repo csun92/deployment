@@ -1,0 +1,138 @@
+"CMAKE_SKIP_RPATH": "ON"
+Module_ITKVideoBridgeOpenCV: OFF
+#Module_ITKDeprecated: ON //not found: cmake error
+Module_ITKIOPhilipsREC: OFF
+Module_ITKVideoBridgeVXL: OFF
+#Module_ITKDCMTK: ON  // build erreur non résoulu
+Module_ITKLevelSetsv4Visualization: OFF
+Module_ITKVtkGlue: OFF
+Module_ITKReview: ON
+#"ITK_WRAPPING": "ON" //not found: cmake error
+"ITK_WRAP_DIMS": "2;3"
+
+"""don't use"""
+ITK_USE_SYSTEM_FFTW: OFF
+USE_FFTW: OFF
+ITK_USE_FFTWF: OFF
+ITK_USE_FFTWD: OFF
+"""don't use"""
+
+"ITK_USE_STRICT_CONCEPT_CHECKING": "ON"
+"VCL_INCLUDE_CXX_0X": "ON"
+
+******************************************************************
+show my changes:
+
+Cache file:
+ITK_USE_STRICT_CONCEPT_CHECKING:BOOL=1
+Module_ITKIODCMTK:BOOL=1
+CMAKE_MODULE_LINKER_FLAGS:STRING=
+Module_ITKReview:BOOL=1
+CMAKE_SKIP_RPATH:BOOL=1
+VCL_INCLUDE_CXX_0X:BOOL=1
+******************************************************************
+Debug log:
+In ITKDMCTK project:
+error: not found intrin.h
+F:\workspace\ITK-MinGW\ITK-build\Modules\ThirdParty\DCMTK\ITKDCMTK_ExtProject\oflog\include\dcmtk\oflog\config
+win32.h
+#if (defined (_MSC_VER) && _MSC_VER > 1400) || defined (__MINGW32__)
+//#  define DCMTK_LOG4CPLUS_HAVE_INTRIN_H
+#endif
+(comment the above line)
+
+error: new declaration STD_NAMESPACE string tostring (const STD_NAMESPACE wstring & src) ...
+F:\workspace\ITK-MinGW\ITK-build\Modules\ThirdParty\DCMTK\ITKDCMTK_ExtProject\oflog\include\dcmtk\oflog
+tstring.h
+//DCMTK_LOG4CPLUS_EXPORT OFString tostring(const STD_NAMESPACE wstring&);
+//DCMTK_LOG4CPLUS_EXPORT OFString tostring(wchar_t const *);
+(In line 78 79, comment the two lines)
+
+
+error: no rules to make target 'dcmdata_NOTFOUND', needed by ... libITKIODCMTK- ...
+(not resolved)
+********************************************************************
+show my changes:
+
+Cache file:
+ITK_USE_STRICT_CONCEPT_CHECKING:BOOL=1
+CMAKE_MODULE_LINKER_FLAGS:STRING=
+Module_ITKReview:BOOL=1
+CMAKE_SKIP_RPATH:BOOL=1
+VCL_INCLUDE_CXX_0X:BOOL=1
+**********************************************************************
+Debug log:
+
+F:/workspace/ITK-MinGW/ITK-build/Wrapping/Modules/ITKCommon/itkNumericTraits.cxx
+
+F:/workspace/ITK-MinGW/ITK-build/Wrapping/Typedefs/itkNumericTraitsSwigInterface
+.h:31:9: error: '_Num_base' in namespace 'std' does not name a type
+ typedef std::_Num_base std_Num_base;
+         ^
+F:/workspace/ITK-MinGW/ITK-build/Wrapping/Typedefs/itkNumericTraitsSwigInterface
+.h:32:9: error: '_Num_int_base' in namespace 'std' does not name a type
+ typedef std::_Num_int_base std_Num_int_base;
+         ^
+F:/workspace/ITK-MinGW/ITK-build/Wrapping/Typedefs/itkNumericTraitsSwigInterface
+.h:33:9: error: '_Num_float_base' in namespace 'std' does not name a type
+ typedef std::_Num_float_base std_Num_float_base
+
+too long time, terminated with completed...
+**************************************************************************
+show my changes:
+
+Cache file:
+CMAKE_INSTALL_PREFIX:PATH=C:/Program Files/ITK
+ITK_WRAP_signed_short:BOOL=0
+ITK_WRAP_unsigned_char:BOOL=0
+ITK_WRAP_complex_float:BOOL=0
+ITK_WRAP_covariant_vector_float:BOOL=0
+ITK_WRAP_rgba_unsigned_char:BOOL=0
+ITK_USE_STRICT_CONCEPT_CHECKING:BOOL=1
+CMAKE_MODULE_LINKER_FLAGS:STRING=
+Module_ITKReview:BOOL=1
+ITK_WRAP_float:BOOL=0
+CMAKE_SKIP_RPATH:BOOL=1
+ITK_WRAP_vector_float:BOOL=0
+VCL_INCLUDE_CXX_0X:BOOL=1
+ITK_WRAP_rgb_unsigned_char:BOOL=0
+(disabled all ITK wrap types)
+
+*************************************************************************
+Debug logs:
+
+F:/workspace/ITK-MinGW/ITK-build/Wrapping/Modules/ITKCommon/itkNumericTraits.cxx
+F:/workspace/ITK-MinGW/ITK-build/Wrapping/Typedefs/itkNumericTraitsSwigInterface.h
+
+comment all lines with:
+_Num_base
+_Num_int_base
+_Num_float_base
+
+**************************************************************************
+
+
+**************************************************************************
+add the following ITK_WRAP_* options:
+ITK_WRAP_float: ON
+ITK_WRAP_signed_short: ON
+ITK_WRAP_vector_float: ON
+ITK_WRAP_signed_long: ON
+ITK_WRAP_rgb_unsigned_short: OFF
+ITK_WRAP_rgba_unsigned_char: ON
+ITK_WRAP_vector_double: OFF
+ITK_WRAP_complex_double: OFF
+ITK_WRAP_unsigned_char: ON
+ITK_WRAP_signed_char: ON
+ITK_WRAP_rgba_unsigned_short: OFF
+ITK_WRAP_double: OFF
+ITK_WRAP_unsigned_short: ON
+ITK_WRAP_complex_float: ON
+ITK_WRAP_covariant_vector_double: OFF
+ITK_WRAP_rgb_unsigned_char: ON
+ITK_WRAP_unsigned_long: ON
+ITK_WRAP_covariant_vector_float: ON
+
+
+
+

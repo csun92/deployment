@@ -20,8 +20,28 @@ change cmake build file
 
 
 itkNumericTraits errors:
-
+F:/workspace/ITK-MinGW/ITK-build/Wrapping/Modules/ITKCommon/itkNumericTraits.cxx
 comment all lines with:
 _Num_base
 _Num_int_base
 _Num_float_base
+
+      typedef std::_Num_base std_Num_base;
+
+      typedef std::_Num_int_base std_Num_int_base;
+
+      typedef std::_Num_float_base std_Num_float_base;
+
+  sizeof(std_Num_base);
+
+  sizeof(std_Num_int_base);
+
+  sizeof(std_Num_float_base);
+
+
+
+
+
+
+
+
