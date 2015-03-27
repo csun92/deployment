@@ -1,13 +1,13 @@
 "CMAKE_SKIP_RPATH": "ON"
 Module_ITKVideoBridgeOpenCV: OFF
-#Module_ITKDeprecated: ON //not found: cmake error
+#Module_ITKDeprecated: ON //not found
 Module_ITKIOPhilipsREC: OFF
 Module_ITKVideoBridgeVXL: OFF
 #Module_ITKDCMTK: ON  // build erreur non résoulu
 Module_ITKLevelSetsv4Visualization: OFF
 Module_ITKVtkGlue: OFF
 Module_ITKReview: ON
-#"ITK_WRAPPING": "ON" //not found: cmake error
+#"ITK_WRAPPING": "ON" //not found
 "ITK_WRAP_DIMS": "2;3"
 
 """don't use"""
@@ -25,32 +25,33 @@ show my changes:
 
 Cache file:
 ITK_USE_STRICT_CONCEPT_CHECKING:BOOL=1
-Module_ITKIODCMTK:BOOL=1
+Module_ITKIODCMTK:BOOL=1 //option enabled by error,remove it!
 CMAKE_MODULE_LINKER_FLAGS:STRING=
 Module_ITKReview:BOOL=1
 CMAKE_SKIP_RPATH:BOOL=1
 VCL_INCLUDE_CXX_0X:BOOL=1
 ******************************************************************
-Debug log:
-In ITKDMCTK project:
-error: not found intrin.h
-F:\workspace\ITK-MinGW\ITK-build\Modules\ThirdParty\DCMTK\ITKDCMTK_ExtProject\oflog\include\dcmtk\oflog\config
-win32.h
-#if (defined (_MSC_VER) && _MSC_VER > 1400) || defined (__MINGW32__)
-//#  define DCMTK_LOG4CPLUS_HAVE_INTRIN_H
-#endif
-(comment the above line)
-
-error: new declaration STD_NAMESPACE string tostring (const STD_NAMESPACE wstring & src) ...
-F:\workspace\ITK-MinGW\ITK-build\Modules\ThirdParty\DCMTK\ITKDCMTK_ExtProject\oflog\include\dcmtk\oflog
-tstring.h
-//DCMTK_LOG4CPLUS_EXPORT OFString tostring(const STD_NAMESPACE wstring&);
-//DCMTK_LOG4CPLUS_EXPORT OFString tostring(wchar_t const *);
-(In line 78 79, comment the two lines)
-
-
-error: no rules to make target 'dcmdata_NOTFOUND', needed by ... libITKIODCMTK- ...
-(not resolved)
+*Debug log:
+*In ITKDMCTK project:
+*error: not found intrin.h
+*F:\workspace\ITK-MinGW\ITK-build\Modules\ThirdParty\DCMTK\ITKDCMTK_ExtProject\oflog\include\dcmtk\oflog\config
+*win32.h
+*#if (defined (_MSC_VER) && _MSC_VER > 1400) || defined (__MINGW32__)
+*//#  define DCMTK_LOG4CPLUS_HAVE_INTRIN_H
+*#endif
+*(comment the above line)
+*
+*error: new declaration STD_NAMESPACE string tostring (const STD_NAMESPACE wstring & src) ...
+*F:\workspace\ITK-MinGW\ITK-build\Modules\ThirdParty\DCMTK\ITKDCMTK_ExtProject\oflog\include\dcmtk\oflog
+*tstring.h
+*//DCMTK_LOG4CPLUS_EXPORT OFString tostring(const STD_NAMESPACE wstring&);
+*//DCMTK_LOG4CPLUS_EXPORT OFString tostring(wchar_t const *);
+*(In line 78 79, comment the two lines)
+*
+*
+*error in ITKIODCMTK:
+*error: no rules to make target 'dcmdata_NOTFOUND', needed by ... libITKIODCMTK- ...
+*(not resolved)
 ********************************************************************
 show my changes:
 
@@ -109,9 +110,21 @@ _Num_base
 _Num_int_base
 _Num_float_base
 
+built successful
+
 **************************************************************************
+show my changes:
+add options:
+Module_ITKDeprecated: ON  //Add by hand	
+ITK_WRAPPING: ON //Add by hand
+Module_ITKDCMTK:BOOL=1
 
-
+**************************************************************************
+Debug log:
+......
+Module_ITKDCMTK build success.
+......
+terminated without complete...
 **************************************************************************
 add the following ITK_WRAP_* options:
 ITK_WRAP_float: ON
@@ -132,6 +145,38 @@ ITK_WRAP_covariant_vector_double: OFF
 ITK_WRAP_rgb_unsigned_char: ON
 ITK_WRAP_unsigned_long: ON
 ITK_WRAP_covariant_vector_float: ON
+******************************************************************************
+Debug logs:
+
+F:/workspace/ITK-MinGW/ITK-build/Wrapping/Modules/ITKCommon/itkNumericTraits.cxx
+F:/workspace/ITK-MinGW/ITK-build/Wrapping/Typedefs/itkNumericTraitsSwigInterface.h
+
+comment all lines with:
+_Num_base
+_Num_int_base
+_Num_float_base
+
+mingw32-make[2]: *** No rule to make target 'dcmdata-NOTFOUND', needed by 'lib/_
+ITKCommonPython.pyd'.  Stop.
+********************************************************************************
+DCMTK_DIR:PATH=F:/workspace/dcmtk/dcmtk/dcmtk-build
+ITK_USE_SYSTEM_DCMTK : ON
+
+First compile dcmtk by VS2013.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
