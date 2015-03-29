@@ -31,6 +31,10 @@ Module_ITKReview:BOOL=1
 CMAKE_SKIP_RPATH:BOOL=1
 VCL_INCLUDE_CXX_0X:BOOL=1
 ******************************************************************
+*Note: 
+* Use DCMTK included in ITK will cause compiling problems [error: no rules to make target 'dcmdata_NOTFOUND', needed by ...]
+* So switch to use system DCMTK. Download and compile DCMTK for official website.
+* And then switch on ITK_USE_SYSTEM_DCMTK
 *Debug log:
 *In ITKDMCTK project:
 *error: not found intrin.h
@@ -48,7 +52,7 @@ VCL_INCLUDE_CXX_0X:BOOL=1
 *//DCMTK_LOG4CPLUS_EXPORT OFString tostring(wchar_t const *);
 *(In line 78 79, comment the two lines)
 *
-*
+*Note: ITKIODCMTK is turned on by error. Disable-it.
 *error in ITKIODCMTK:
 *error: no rules to make target 'dcmdata_NOTFOUND', needed by ... libITKIODCMTK- ...
 *(not resolved)
