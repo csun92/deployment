@@ -170,9 +170,39 @@ First compile dcmtk by VS2013.
 
 
 
+[98%] in project ITKReview: target ITKReviewPython:
+c:/mingw/bin/../lib/gcc/mingw32/4.8.1/../../../../mingw32/bin/as.exe: CMakeFiles
+\ITKReviewPython.dir\itkMorphologicalWatershedImageFilterPython.cpp.obj: too man
+y sections (34360)
+C:\Users\sun\AppData\Local\Temp\cc6lFmJw.s: Assembler messages:
+C:\Users\sun\AppData\Local\Temp\cc6lFmJw.s: Fatal error: can't write CMakeFiles\
+ITKReviewPython.dir\itkMorphologicalWatershedImageFilterPython.cpp.obj: File too
+ big
+c:/mingw/bin/../lib/gcc/mingw32/4.8.1/../../../../mingw32/bin/as.exe: CMakeFiles
+\ITKReviewPython.dir\itkMorphologicalWatershedImageFilterPython.cpp.obj: too man
+y sections (34360)
+C:\Users\sun\AppData\Local\Temp\cc6lFmJw.s: Fatal error: can't close CMakeFiles\
+ITKReviewPython.dir\itkMorphologicalWatershedImageFilterPython.cpp.obj: File too
+ big
+Wrapping\Modules\ITKReview\CMakeFiles\ITKReviewPython.dir\build.make:63355: reci
+pe for target 'Wrapping/Modules/ITKReview/CMakeFiles/ITKReviewPython.dir/itkMorp
+hologicalWatershedImageFilterPython.cpp.obj' failed
+mingw32-make[2]: *** [Wrapping/Modules/ITKReview/CMakeFiles/ITKReviewPython.dir/
+itkMorphologicalWatershedImageFilterPython.cpp.obj] Error 1
+CMakeFiles\Makefile2:30028: recipe for target 'Wrapping/Modules/ITKReview/CMakeF
+iles/ITKReviewPython.dir/all' failed
+mingw32-make[1]: *** [Wrapping/Modules/ITKReview/CMakeFiles/ITKReviewPython.dir/
+all] Error 2
+Makefile:136: recipe for target 'all' failed
+mingw32-make: *** [all] Error 2
 
 
-
+mingw32-make[2]: Target 'Wrapping/Modules/ITKReview/CMakeFiles/ITKReviewPython.d
+ir/build' not remade because of errors.
+CMakeFiles\Makefile2:30028: recipe for target 'Wrapping/Modules/ITKReview/CMakeF
+iles/ITKReviewPython.dir/all' failed
+mingw32-make[1]: *** [Wrapping/Modules/ITKReview/CMakeFiles/ITKReviewPython.dir/
+all] Error 2
 
 
 
