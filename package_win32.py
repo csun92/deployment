@@ -19,7 +19,7 @@ def install(binary_dir, install_dir):
     # No need to add path "usr"
     # binary_dir = "F:/workspace/ITK-MinGW/ITK-build/"
     # install_dir = "C:/ITK-4.6/"
-    # Always use the above 2 paths for testing
+    # Always use the above 2 paths for usage
     
     # Patch install files that use absolute paths
     # Attention use string format like "\\"
@@ -83,35 +83,23 @@ def install(binary_dir, install_dir):
 
 def package(install_dir):
     package_name = "ITK-4.6.zip"
+    pattern_py = re.compile(r'/tools', re.I)
+    pattern_prog = re.compile(r'/Program Files', re.I)
     with zipfile.ZipFile(package_name, 'w', zipfile.ZIP_DEFLATED) as itkpack:
         for dirpath,dirnames,filenames in os.walk(install_dir):
             for filename in filenames:
                 fullpath = os.path.join(dirpath,filename)
-                itkpack.write(fullpath)
+                if re.search(pattern_py, fullpath) or re.search(pattern_prog, fullpath):
+                    dest = fullpath.replace("/ITK-4.6/","/")
+                    itkpack.write(fullpath, dest)
+                else:
+                    itkpack.write(fullpath)
                 
-    
-def unpack():
-    package_name = "ITK-4.6.zip"
-    # Get python path
-    pypath = subprocess.check_output(["where", "python"]).strip()
-    dest = "C:/" #Always absolute path
-    # Attention cmake path is considered by default "C:/Program Files/CMake/"
-    pattern_cmake = re.compile(r'ITK-4.6/Program Files/CMake/', re.I)
-    pattern_itk = re.compile(r'ITK-4.6/Program Files/ITK', re.I)
-    pattern_py = re.compile(r'ITK-4.6/tools/', re.I)
-    with zipfile.ZipFile(package_name, 'r') as itkpack:
-        filelist = itkpack.namelist()
-        for member in filelist:
-            if re.search(pattern_py, member):
-                pass
-            elif re.search(pattern_itk, member):
-                itk_dest = os.path.join(dest, member.split('/',1)[1])
-                itkpack.extract(member, itk_dest)
-            else:
-                itkpack.extract(member, dest)
-        
 
-
-
+# Notes:
+# To avoid import error: ImportError: DLL load failed: ...
+# In terminal, add C:\ITK-4.6\bin (dll files location) to system path
+# command: set PATH=C:\ITK-4.6\bin:%PATH%
+# Attention: MinGW should be installed and configured in order to support WrapITK!
 
     

@@ -1,0 +1,49 @@
+MinGW
+----------------------------------------------------------------------------------------------------
+Les instructions suivantes 
+----------------------------------------------------------------------------------------------------
+1. Télécharger MinGW, vérifier que "C compiler", "C++ compiler", and "MinGW Developer ToolKit" 
+sont bien cochés. Télécharger les sources de ITK 4.6
+2. Ajouter mingw/bin dans system path. Vérifier que msys n'est pas dans system path.
+3. Installer et Lancer CMake GUI. 
+4. A côté de "Where is the source code:", cliquer "Browse Source..." et diriger vers le répertoire 
+où se trouve les sources.
+5. A côté de "Where to build the binaries:", choisir "Browse Build..." et sélectionner un endroit pour 
+build les libraires ITK. Par example, vous pouvez utiliser c:\build\ITK. Ce répertoire est
+forcément différent avec le répertoire des sources de ITK.
+6. Cliquer "Configure", et puis spécifier  "MinGW Makefiles" comme le générateur de ce projet.
+7. Vérifier bien que les options suivantes sont bien cochés ou modifiés:
+CMAKE_SKIP_RPATH: "ON"
+Module_ITKVideoBridgeOpenCV: OFF
+Module_ITKIOPhilipsREC: OFF
+Module_ITKVideoBridgeVXL: OFF
+Module_ITKLevelSetsv4Visualization: OFF
+Module_ITKVtkGlue: OFF
+Module_ITKReview: ON
+#"ITK_WRAPPING": "ON" //Ajouter manuellement
+"ITK_WRAP_DIMS": "2;3"
+"ITK_USE_STRICT_CONCEPT_CHECKING": "ON"
+"VCL_INCLUDE_CXX_0X": "ON"
+Module_ITKReview:BOOL=1
+CMAKE_SKIP_RPATH:BOOL=1
+VCL_INCLUDE_CXX_0X:BOOL=1
+
+ITK_WRAP_float: ON
+ITK_WRAP_signed_short: ON
+ITK_WRAP_vector_float: ON
+ITK_WRAP_signed_long: ON
+ITK_WRAP_rgb_unsigned_short: OFF
+ITK_WRAP_rgba_unsigned_char: ON
+ITK_WRAP_vector_double: OFF
+ITK_WRAP_complex_double: OFF
+ITK_WRAP_unsigned_char: ON
+ITK_WRAP_signed_char: ON
+ITK_WRAP_rgba_unsigned_short: OFF
+ITK_WRAP_double: OFF
+ITK_WRAP_unsigned_short: ON
+ITK_WRAP_complex_float: ON
+ITK_WRAP_covariant_vector_double: OFF
+ITK_WRAP_rgb_unsigned_char: ON
+ITK_WRAP_unsigned_long: ON
+ITK_WRAP_covariant_vector_float: ON
+

@@ -1,0 +1,23 @@
+Informations avant commencement:
+1. Ce paquet ITK-4.6.zip est compilé via MinGW et il est empaqueté par Python zipfile module.
+(pour plus de détails, veuillez consulter l'instruction de compilation ITK)
+2. Ce paquet est compilé et testé sur Win8.1 32Bits.
+
+Pour installer ITK du paquet ITK-4.6.zip, veuillez suivre les instructions suivantes:
+1. Copier le fichier ITK-4.6.zip et le fichier unpack.py dans un répertoire.
+2. Lancer le terminal avec droit administratif(Admin)
+3. Aller dans le répertoire, taper python unpack.py. l'Installation va terminer automatiquement. 
+Après l'installation, ajouter C:\ITK-4.6\bin à system path(System->Advanced system settings->Advanced
+->Environment Variables -> Path)
+4. Pour tester si ITK est installé avec succèss, lancer le programme de test:
+taper python itk_test.py ray.bmp out.png
+Normallement ça va générer un fichier out.png
+
+Notes:
+1. Pour bien utiliser ITK via Python, il faut d'abord installer MinGW. Ajouter aussi le chemin
+de MinGW à system path(eg. C:\MinGW\bin\)
+2. Attention les chemins de Python et de CMake. Dans ce paquet d'installation,
+Le chemin par défault de CMake est: C:\Program Files\CMake\
+Le chemin par défault de Python est: C:\tools\python2\
+Si les chemins dans votre système sont différents avec ceux-ci, veuillez changer manuellement les chemins.
+(Vous pouvez copier vous-même les fichiers dans les vrais endroits)
