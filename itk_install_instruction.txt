@@ -17,7 +17,7 @@ Notes:
 1. Pour bien utiliser ITK via Python, il faut d'abord installer MinGW. Ajouter aussi le chemin
 de MinGW à system path(eg. C:\MinGW\bin\)
 2. Attention les chemins de Python et de CMake. Dans ce paquet d'installation,
-Le chemin par défault de CMake est: C:\Program Files\CMake\
-Le chemin par défault de Python est: C:\tools\python2\
-Si les chemins dans votre système sont différents avec ceux-ci, veuillez changer manuellement les chemins.
-(Vous pouvez copier vous-même les fichiers dans les vrais endroits)
+Le chemin par défault de CMake est: C:/Program Files/CMake/
+Le chemin par défault de Python est: C:/tools/python2/
+Si les chemins dans votre système sont différents avec ceux-ci, veuillez changer manuellement les chemins
+dans le fichier unpack.py(attention au format)

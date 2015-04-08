@@ -12,6 +12,70 @@ def Directory(value):
         raise argparse.ArgumentTypeError("No such directory: '{}'".format(value))
     return os.path.abspath(value)
 
+def configure(source_dir, build_dir):
+    options = {}
+    
+    # General CMake options
+    options.update({
+        "BUILD_EXAMPLES": "OFF",
+        "BUILD_SHARED_LIBS": "ON",
+        "BUILD_TESTING": "OFF",
+        "CMAKE_INSTALL_PREFIX": "C:/Program Files/ITK",
+        "CMAKE_SKIP_RPATH": "ON"
+    })
+    
+    # Use system tools as much as possible. HDF5 fails on Ubuntu 12.04
+    options.update({
+        "ITK_USE_SYSTEM_DCMTK": "ON"
+    })
+    
+    # Modules
+    modules = {
+        "DCMTK": True, "Deprecated": True, "IOPhilipsREC": False,
+        "LevelSetsv4Visualization": False, "Review": True,
+        "VideoBridgeOpenCV": False, "VideoBridgeVXL": False,
+        "VtkGlue": False
+    }
+    for module, value in modules.items():
+        options["Module_ITK{}".format(module)] = "ON" if value else "OFF"
+
+    # Wrapping
+    options.update({
+        "ITK_WRAPPING": "ON",
+        "ITK_WRAP_PYTHON": "ON",
+        "ITK_WRAP_DIMS": "2;3"
+    })
+    types = {
+        # Float types
+        "double": False, "float": True,
+        "complex_double": False, "complex_float": True,
+        "vector_double": False, "vector_float": True,
+        "covariant_vector_double": False, "covariant_vector_float": True,
+        # RGB types
+        "rgb_unsigned_char": True, "rgb_unsigned_short": False,
+        "rgba_unsigned_char": True, "rgba_unsigned_short": False,
+        # Integer types
+        "signed_char": True, "signed_long": True, "signed_short": True,
+        "unsigned_char": True, "unsigned_long": True, "unsigned_short": True,
+    }
+    for type_, value in types.items():
+        options["ITK_WRAP_{}".format(type_)] = "ON" if value else "OFF"     
+    
+    # Miscelaneous options
+    options.update({
+        "ITK_USE_STRICT_CONCEPT_CHECKING": "ON",
+        "ITKV3_COMPATIBILITY": "ON",
+        "VCL_INCLUDE_CXX_0X": "ON"
+    })
+    
+    options = ["-D{}={}".format(name, value) 
+        for name, value in options.items()]
+    
+    if not os.path.isdir(build_dir):
+        os.makedirs(build_dir)
+    subprocess.check_call(["cmake"] + options + [source_dir],
+        cwd=build_dir)
+
 def build(binary_dir, jobs):
     subprocess.check_call(["mingw32-make", "-j", str(jobs)], cwd=binary_dir)
 

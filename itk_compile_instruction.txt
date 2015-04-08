@@ -1,32 +1,39 @@
 MinGW
 ----------------------------------------------------------------------------------------------------
-Les instructions suivantes 
+Les instructions suivantes sont sous environnement windows 8.1 32bits, en utilisant MinGW
+pour construire le projet.
 ----------------------------------------------------------------------------------------------------
 1. Télécharger MinGW, vérifier que "C compiler", "C++ compiler", and "MinGW Developer ToolKit" 
-sont bien cochés. Télécharger les sources de ITK 4.6
-2. Ajouter mingw/bin dans system path. Vérifier que msys n'est pas dans system path.
+sont bien cochés. Télécharger les fichiers source de ITK 4.6
+2. Ajouter ../mingw/bin dans system path. Vérifier que msys n'est pas dans system path.
 3. Installer et Lancer CMake GUI. 
 4. A côté de "Where is the source code:", cliquer "Browse Source..." et diriger vers le répertoire 
-où se trouve les sources.
+où se trouve les fichiers source.
 5. A côté de "Where to build the binaries:", choisir "Browse Build..." et sélectionner un endroit pour 
 build les libraires ITK. Par example, vous pouvez utiliser c:\build\ITK. Ce répertoire est
 forcément différent avec le répertoire des sources de ITK.
 6. Cliquer "Configure", et puis spécifier  "MinGW Makefiles" comme le générateur de ce projet.
-7. Vérifier bien que les options suivantes sont bien cochés ou modifiés:
-CMAKE_SKIP_RPATH: "ON"
+7.Après configuration, vérifier bien que les options suivantes sont bien cochés ou modifiés:
+
+BUILD_EXAMPLES: OFF
+BUILD_TESTING: OFF
+BUILD_SHARED_LIBS: ON
+CMAKE_SKIP_RPATH: ON
+ITK_BUILD_DEFAULT_MODULES: ON
+
 Module_ITKVideoBridgeOpenCV: OFF
 Module_ITKIOPhilipsREC: OFF
 Module_ITKVideoBridgeVXL: OFF
 Module_ITKLevelSetsv4Visualization: OFF
 Module_ITKVtkGlue: OFF
 Module_ITKReview: ON
-#"ITK_WRAPPING": "ON" //Ajouter manuellement
-"ITK_WRAP_DIMS": "2;3"
-"ITK_USE_STRICT_CONCEPT_CHECKING": "ON"
-"VCL_INCLUDE_CXX_0X": "ON"
-Module_ITKReview:BOOL=1
-CMAKE_SKIP_RPATH:BOOL=1
-VCL_INCLUDE_CXX_0X:BOOL=1
+#Module_ITKDCMTK: ON //Attention! Erreur de compilation, utiliser system DCMTK instead.
+ITK_WRAPPING: ON //Ajouter manuellement
+ITK_WRAP_PYTHON: ON
+ITK_WRAP_DIMS: "2;3"
+ITK_USE_STRICT_CONCEPT_CHECKING: ON
+VCL_INCLUDE_CXX_0X: ON
+ITKV3_COMPATIBILITY: ON
 
 ITK_WRAP_float: ON
 ITK_WRAP_signed_short: ON
@@ -47,3 +54,76 @@ ITK_WRAP_rgb_unsigned_char: ON
 ITK_WRAP_unsigned_long: ON
 ITK_WRAP_covariant_vector_float: ON
 
+NOTE: 
+A cause de problèmes de Module_ITKDCMTK, on va utiliser DCMTK du système.
+D'abord, télécharger DCMTK. Compiler. (Dans mon cas, j'ai utilisé VS2013 pour compiler car
+il y a des erreurs en utilisant MinGW)
+Ensuite, modifier les options CMake de ITK comme suivantes:
+ITK_USE_SYSTEM_DCMTK : ON
+DCMTK_DIR:PATH=(where you build your DMCTK)
+
+8. Après vérification, cliquer "Generate".
+9. Ouvrir un shell MinGW(ou terminal)
+10. Diriger vers le répertoire où vous avez spécifié via CMake
+11. Taper "mingw32-make".
+-------------------------------------------------------------------------------------------------
+Debug logs
+Lors de la compilation, il existe éventuellement quelques erreurs. Mais on peut les résoudre en faisant 
+un peu de modifications(J'ai listé toutes les erreurs j'ai vu lorsque la compilation)
+-------------------------------------------------------------------------------------------------
+1. TIFF compile error:
+Parmi les fichiers de TIFF, trouver le fichier qui contient #if defined(_WIN32)...
+remplacer ces contenus par:
+#if defined(_WIN32) && ! defined(__MINGW32_VERSION)
+    struct _stat64 fs64;
+    if ( _stat64(filename, &fs64) )
+      {
+      // Both stat() and _stat64() return != 0
+      return 0;
+      }
+#else
+    return 0;
+#endif
+
+2. GCC options error:
+Une fois dans un projet, on va rencontrer une erreur de gcc option.
+Rechercher dans les fichiers MakeFile de ce target, modifier comme ça:
+ /D_CRT_SECURE_NO_WARNINGS  -->  -D_CRT_SECURE_NO_WARNINGS
+
+3.Typedef error:
+dans fichier .../ITK-build/Wrapping/Modules/ITKCommon/itkNumericTraits.cxx
+et fichier .../ITK-build/Wrapping/Typedefs/itkNumericTraitsSwigInterface.h
+  error: '_Num_base' in namespace 'std' does not name a type
+   typedef std::_Num_base std_Num_base;
+ ... ...
+Pour résoudre les erreurs, comment tous les lignes avec:
+_Num_base
+_Num_int_base
+_Num_float_base
+     (
+      //typedef std::_Num_base std_Num_base;
+
+      //typedef std::_Num_int_base std_Num_int_base;
+
+      //typedef std::_Num_float_base std_Num_float_base;
+
+      //sizeof(std_Num_base);
+
+      //sizeof(std_Num_int_base);
+
+      //sizeof(std_Num_float_base);
+      )
+
+4. File too big error:
+Dans project ITKReview, target ITKReviewPython:
+...
+Fatal error: can't write CMakeFiles\
+ITKReviewPython.dir\itkMorphologicalWatershedImageFilterPython.cpp.obj: File too
+ big
+...
+
+Problème à cause de mingw32, non résoulu.
+On peut ignorer ce problème en ajoutant un argument à mingw32-make:
+mingw32-make -i
+(Seulement le fichier itkMorphologicalWatershedImageFilterPython.cpp.obj n'est pas réussit,
+il semble que les autres parties de ITKReviewPython n'ont pas de problème)
