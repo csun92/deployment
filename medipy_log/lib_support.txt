@@ -1,0 +1,20 @@
+wxPython3.0-py27 installed from installer ...done (wxtools 2.8.12.1)
+numpy-1.9.2-win32-py27 installed from installer ...done (1.8.2)
+scipy-0.15.1-win32-py27 installed from installer ...done (0.13.3)
+ITK(compiled manuellement from sources 4.6.1)
+VTK-5.8.0 compiled and installed from source by VS2008 ...done (5.8)
+
+
+mercurial 3.3.3 installed by choco ...done
+setuptools 7.0 installed by pip ...done (3.3)
+ipython 3.1.0 installed by pip ...done (1.2.1)
+tkinter already installed by default with tcl/tk (python-tk 2.7.5)
+docutils 0.12 installed by pip ...done (python-docutils 0.11)
+doxygen 1.8.9.1 installed from installer ...done (doxygen 1.8.6-2)
+Cython 0.22 installed by pip ...done (cython 0.20.1)
+dcmtk 3.6.0 compiled and installed from source by VS2013 ...done (dcmtk 3.6.0)
+swig 3.0.2 installed by choco ...done
+gdcm 2.4.0 installed from installer ..done (libgdcm3-dev 2.2.4)
+...removed (errors)
+gdcm 2.2.4 installed from installer ..done
+gccxml 0.9 compiled and installed from source by MinGW ...down

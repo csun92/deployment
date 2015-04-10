@@ -1,0 +1,27 @@
+
+../medipy/cmake/UseCython.cmake:
+line 83 Add comment:
+#string(REGEX MATCH "[0-9.]+" CYTHON_VERSION ${CYTHON_VERSION})
+
+
+C:\ITK-4.6\lib\cmake\ITK-4.6\WrapITK\Configuration\Generators\SwigInterface\CMakeLists.txt:
+line 52 add comment:
+#itk_download_attempt_check(SWIG)
+
+C:\ITK-4.6\lib\cmake\ITK-4.6\WrapITK\Configuration\Generators\GccXML\CMakeLists.txt
+line 32 add comment:
+#itk_download_attempt_check(GCC_XML)
+
+C:\ITK-4.6\lib\cmake\ITK-4.6\Modules\ITKDCMTK.cmake:
+fix DCMTK dir:
+set(ITKDCMTK_LOADED 1)
+set(ITKDCMTK_DEPENDS "")
+set(ITKDCMTK_LIBRARIES "optimized;C:/Program Files/DCMTK/lib/dcmpstat.lib;optimized;C:/Program Files/DCMTK/lib/dcmsr.lib;optimized;C:/Program Files/DCMTK/lib/dcmtls.lib;optimized;C:/Program Files/DCMTK/lib/dcmqrdb.lib;optimized;C:/Program Files/DCMTK/lib/dcmnet.lib;optimized;C:/Program Files/DCMTK/lib/dcmjpeg.lib;optimized;C:/Program Files/DCMTK/lib/dcmimage.lib;optimized;C:/Program Files/DCMTK/lib/dcmimgle.lib;optimized;C:/Program Files/DCMTK/lib/Release/dcmdata.lib;optimized;C:/Program Files/DCMTK/lib/oflog.lib;optimized;C:/Program Files/DCMTK/lib/ofstd.lib;optimized;C:/Program Files/DCMTK/lib/ijg12.lib;optimized;C:/Program Files/DCMTK/lib/ijg16.lib;optimized;C:/Program Files/DCMTK/lib/ijg8.lib;netapi32;wsock32")
+set(ITKDCMTK_INCLUDE_DIRS "${ITK_INSTALL_PREFIX}/include/ITK-4.6;C:/Program Files/DCMTK/include/dcmtk/config;C:/Program Files/DCMTK/include/;C:/Program Files/DCMTK/include/dcmtk/dcmdata;C:/Program Files/DCMTK/include/dcmtk/dcmimage;C:/Program Files/DCMTK/include/dcmtk/dcmimgle;C:/Program Files/DCMTK/include/dcmtk/dcmjpeg;C:/Program Files/DCMTK/include/dcmtk/dcmjpls;C:/Program Files/DCMTK/include/dcmtk/dcmnet;C:/Program Files/DCMTK/include/dcmtk/dcmpstat;C:/Program Files/DCMTK/include/dcmtk/dcmqrdb;C:/Program Files/DCMTK/include/dcmtk/dcmsign;C:/Program Files/DCMTK/include/dcmtk/dcmsr;C:/Program Files/DCMTK/include/dcmtk/dcmtls;C:/Program Files/DCMTK/include/dcmtk/ofstd;C:/Program Files/DCMTK/include/dcmtk/oflog;C:/Program Files/DCMTK/include/;")
+set(ITKDCMTK_LIBRARY_DIRS "")
+
+set(DCMTK_DIR "C:/Program Files/DCMTK/")
+find_package(DCMTK REQUIRED)
+
+
+

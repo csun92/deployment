@@ -1,0 +1,12 @@
+BUILD_TESTING:BOOL=0
+BUILD_SHARED_LIBS:BOOL=1
+VTK_WRAP_PYTHON:BOOL=1
+VTK_USE_TK:BOOL=0
+
+VS2008 Debug
+Build
+========== Build: 78 succeeded, 0 failed, 2 up-to-date, 2 skipped ==========
+
+Install
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
+
