@@ -12,9 +12,20 @@ tkinter already installed by default with tcl/tk (python-tk 2.7.5)
 docutils 0.12 installed by pip ...done (python-docutils 0.11)
 doxygen 1.8.9.1 installed from installer ...done (doxygen 1.8.6-2)
 Cython 0.22 installed by pip ...done (cython 0.20.1)
+...removed (errors cmake)
+Cython 0.20.1 compiled and installed from source ...done
+...(note: still the same errors)
+...add C:\tools\python2\Scripts solved the problem
 dcmtk 3.6.0 compiled and installed from source by VS2013 ...done (dcmtk 3.6.0)
 swig 3.0.2 installed by choco ...done
 gdcm 2.4.0 installed from installer ..done (libgdcm3-dev 2.2.4)
-...removed (errors)
+...removed (errors cmake)
 gdcm 2.2.4 installed from installer ..done
+...removed (errors cmake)
+gdcm 2.2.4 compiled and installed from source by MinGW ...down
+...no errors.resolved
 gccxml 0.9 compiled and installed from source by MinGW ...down
+
+note: use cmake 2.8.12 to deal with medipy!
+cmake configure and generate success with :
+Warning: the CMAKE_INSTALL_PREFIX doesn't match the WrapITK one. Your installation may not be usable.

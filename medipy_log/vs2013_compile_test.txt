@@ -1,0 +1,16 @@
+project vtk_addons built success.
+project AssembleTilesImageFilterGccXXX(\lib\medipy\io\dicom):*
+Error	11	error C1083: Cannot open include file: 'tr1/type_traits': No such file or directory	c:\itk-4.6\include\itk-4.6\itkImageAlgorithm.h	26	1	AssembleTilesImageFilterPython
+
+
+Error	2	error C2864: 'vnl_numeric_traits<float>::zero' : a static data member with an in-class initializer must have non-volatile const integral type	C:\ITK-4.6\include\ITK-4.6\vnl\vnl_numeric_traits.h	387	1	AssembleTilesImageFilterPython
+Error	3	error C2864: 'vnl_numeric_traits<float>::one' : a static data member with an in-class initializer must have non-volatile const integral type	C:\ITK-4.6\include\ITK-4.6\vnl\vnl_numeric_traits.h	389	1	AssembleTilesImageFilterPython
+Error	4	error C2864: 'vnl_numeric_traits<float>::maxval' : a static data member with an in-class initializer must have non-volatile const integral type	C:\ITK-4.6\include\ITK-4.6\vnl\vnl_numeric_traits.h	391	1	AssembleTilesImageFilterPython
+Error	5	error C2864: 'vnl_numeric_traits<double>::zero' : a static data member with an in-class initializer must have non-volatile const integral type	C:\ITK-4.6\include\ITK-4.6\vnl\vnl_numeric_traits.h	410	1	AssembleTilesImageFilterPython
+Error	6	error C2864: 'vnl_numeric_traits<double>::one' : a static data member with an in-class initializer must have non-volatile const integral type	C:\ITK-4.6\include\ITK-4.6\vnl\vnl_numeric_traits.h	412	1	AssembleTilesImageFilterPython
+Error	7	error C2864: 'vnl_numeric_traits<double>::maxval' : a static data member with an in-class initializer must have non-volatile const integral type	C:\ITK-4.6\include\ITK-4.6\vnl\vnl_numeric_traits.h	414	1	AssembleTilesImageFilterPython
+Error	8	error C2864: 'vnl_numeric_traits<long double>::zero' : a static data member with an in-class initializer must have non-volatile const integral type	C:\ITK-4.6\include\ITK-4.6\vnl\vnl_numeric_traits.h	433	1	AssembleTilesImageFilterPython
+Error	9	error C2864: 'vnl_numeric_traits<long double>::one' : a static data member with an in-class initializer must have non-volatile const integral type	C:\ITK-4.6\include\ITK-4.6\vnl\vnl_numeric_traits.h	435	1	AssembleTilesImageFilterPython
+Error	10	error C2864: 'vnl_numeric_traits<long double>::maxval' : a static data member with an in-class initializer must have non-volatile const integral type	C:\ITK-4.6\include\ITK-4.6\vnl\vnl_numeric_traits.h	437	1	AssembleTilesImageFilterPython
+
+Error	3	error LNK1181: cannot open input file 'C:\Program Files\DCMTK\lib\Release\dcmdata.lib'	F:\VS2013\medipy\lib\medipy\io\dicom\LINK	AssembleTilesImageFilterPython
