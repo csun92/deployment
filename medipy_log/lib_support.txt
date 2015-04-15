@@ -1,8 +1,9 @@
 wxPython3.0-py27 installed from installer ...done (wxtools 2.8.12.1)
 numpy-1.9.2-win32-py27 installed from installer ...done (1.8.2)
 scipy-0.15.1-win32-py27 installed from installer ...done (0.13.3)
-ITK(compiled manuellement from sources 4.6.1)
+ITK(compiled and installed from sources by mingw 4.6.1)
 VTK-5.8.0 compiled and installed from source by VS2008 ...done (5.8)
+another VTK-5.8.0 compiled and installed from source by MinGW ...done
 
 
 mercurial 3.3.3 installed by choco ...done

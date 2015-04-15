@@ -1,0 +1,8 @@
+ITKIOSpatialObjectsPython
+ITKIOTransformBasePython
+ITKIOMRCPython
+ITKIOImageBasePython
+ITKIOGDCMPython
+ITKLevelSetsPython
+ITKSpatialObjectsPython
+ITKReviewPython
