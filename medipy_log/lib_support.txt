@@ -1,9 +1,12 @@
+Attention select Release configuration for all projects!
+
 wxPython3.0-py27 installed from installer ...done (wxtools 2.8.12.1)
 numpy-1.9.2-win32-py27 installed from installer ...done (1.8.2)
 scipy-0.15.1-win32-py27 installed from installer ...done (0.13.3)
-ITK(compiled and installed from sources by mingw 4.6.1)
+#ITK(compiled and installed from sources by mingw 4.6.1) //no longer use
+ITK(compiled and installed from source by VS2008 all success)
 VTK-5.8.0 compiled and installed from source by VS2008 ...done (5.8)
-another VTK-5.8.0 compiled and installed from source by MinGW ...done
+#another VTK-5.8.0 compiled and installed from source by MinGW ...done
 
 
 mercurial 3.3.3 installed by choco ...done
@@ -17,16 +20,21 @@ Cython 0.22 installed by pip ...done (cython 0.20.1)
 Cython 0.20.1 compiled and installed from source ...done
 ...(note: still the same errors)
 ...add C:\tools\python2\Scripts solved the problem
-dcmtk 3.6.0 compiled and installed from source by VS2013 ...done (dcmtk 3.6.0)
+#dcmtk 3.6.0 compiled and installed from source by VS2013 ...done (dcmtk 3.6.0)
+dcmtk 3.6.0 compiled and installed from source by VS2008 ...done(with Cmake options fixed)
 swig 3.0.2 installed by choco ...done
-gdcm 2.4.0 installed from installer ..done (libgdcm3-dev 2.2.4)
+#gdcm 2.4.0 installed from installer ..done (libgdcm3-dev 2.2.4)
 ...removed (errors cmake)
-gdcm 2.2.4 installed from installer ..done
+#gdcm 2.2.4 installed from installer ..done
 ...removed (errors cmake)
-gdcm 2.2.4 compiled and installed from source by MinGW ...down
+#gdcm 2.2.4 compiled and installed from source by MinGW ...down
 ...no errors.resolved
-gccxml 0.9 compiled and installed from source by MinGW ...down
+(gdcm 2.2.4 compiled failed with errors by VS2013)
+gdcm 2.2.4 compiled and installed from source by VS2008 ...down
+
+#gccxml 0.9 compiled and installed from source by MinGW ...down
+gccxml 0.9 compiled and installed from source by VS2008 ...down
+(remember to run C:\Program Files\gccxml\bin\gccxml_vcconfig.bat as administrator 
+ to setup the environment)
 
 note: use cmake 2.8.12 to deal with medipy!
-cmake configure and generate success with :
-Warning: the CMAKE_INSTALL_PREFIX doesn't match the WrapITK one. Your installation may not be usable.

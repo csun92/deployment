@@ -8,10 +8,19 @@ C:\ITK-4.6\lib\cmake\ITK-4.6\WrapITK\Configuration\Generators\SwigInterface\CMak
 line 52 add comment:
 #itk_download_attempt_check(SWIG)
 
+or:
+option(ITK_USE_SYSTEM_GCCXML "Use system gccxml. If OFF, gccxml is built as an external project." ON)
+(OFF -> ON)
+
 C:\ITK-4.6\lib\cmake\ITK-4.6\WrapITK\Configuration\Generators\GccXML\CMakeLists.txt
 line 32 add comment:
 #itk_download_attempt_check(GCC_XML)
 
+or:
+option(ITK_USE_SYSTEM_SWIG "Use system swig. If OFF, swig is built as an external project." ON)
+(OFF -> ON)
+
+/*
 C:\ITK-4.6\lib\cmake\ITK-4.6\Modules\ITKDCMTK.cmake:
 fix DCMTK dir:
 set(ITKDCMTK_LOADED 1)
@@ -22,6 +31,23 @@ set(ITKDCMTK_LIBRARY_DIRS "")
 
 set(DCMTK_DIR "C:/Program Files/DCMTK/")
 find_package(DCMTK REQUIRED)
+*/
+(no longer usable)
+
+# Fix PYTHONPATH for pygccxml !!!
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+C:\Program Files\ITK\lib\cmake\ITK-4.6\Modules\ITKDCMTK.cmake
+add to set(ITKDCMTK_LIBRARIES :
+optimized;C:/Program Files/DCMTK/lib/dcmdsig.lib;debug;C:/Program Files/DCMTK/lib/dcmdsig.lib;
+
+to medipy cmake, add by hand:
+DCMTK_dcmsign_LIBRARY_RELEASE:FILEPATH=C:/Program Files/DCMTK/lib/dcmdsig.lib
+
+
+
+
+
 
 
 

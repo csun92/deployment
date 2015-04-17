@@ -1,0 +1,11 @@
+Error	352	fatal error LNK1181: cannot open input file 'dcmdsig.lib'	_dataset_io
+	in vs2008, Additional Library Directories: C:\Program Files\DCMTK\lib
+Error	13	error C3861: 'rint': identifier not found
+add in first lines:	
+	#define _USE_MATH_DEFINES 
+
+	#include <cmath>
+(VS non standard)
+Error	10	error C3861: 'rint': identifier not found
+
+
