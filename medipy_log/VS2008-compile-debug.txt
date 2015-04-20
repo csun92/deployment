@@ -9,3 +9,274 @@ add in first lines:
 Error	10	error C3861: 'rint': identifier not found
 
 
+copy numpy include files!
+_helpers:
+add library:
+"C:\Program Files\VTK\lib\vtk-5.8\vtkCommon.lib"
+"C:\Program Files\VTK\lib\vtk-5.8\vtkFiltering.lib"
+"C:\Program Files\VTK\lib\vtk-5.8\vtkImaging.lib"
+"C:\Program Files\VTK\lib\vtk-5.8\vtkGraphics.lib"
+"C:\Program Files\VTK\lib\vtk-5.8\vtkGenericFiltering.lib"
+"C:\Program Files\VTK\lib\vtk-5.8\vtkIO.lib"
+"C:\Program Files\VTK\lib\vtk-5.8\vtkRendering.lib"
+"C:\Program Files\VTK\lib\vtk-5.8\vtkVolumeRendering.lib"
+"C:\Program Files\VTK\lib\vtk-5.8\vtkHybrid.lib"
+"C:\Program Files\VTK\lib\vtk-5.8\vtkWidgets.lib"
+"C:\Program Files\VTK\lib\vtk-5.8\vtkInfovis.lib"
+"C:\Program Files\VTK\lib\vtk-5.8\vtkGeovis.lib"
+"C:\Program Files\VTK\lib\vtk-5.8\vtkViews.lib"
+"C:\Program Files\VTK\lib\vtk-5.8\vtkCharts.lib"
+"C:\Program Files\VTK\lib\vtk-5.8\vtkCommonPythonD.lib"
+"C:\Program Files\VTK\lib\vtk-5.8\vtkFilteringPythonD.lib"
+"C:\Program Files\VTK\lib\vtk-5.8\vtkImagingPythonD.lib"
+"C:\Program Files\VTK\lib\vtk-5.8\vtkGraphicsPythonD.lib"
+"C:\Program Files\VTK\lib\vtk-5.8\vtkGenericFilteringPythonD.lib"
+"C:\Program Files\VTK\lib\vtk-5.8\vtkIOPythonD.lib"
+"C:\Program Files\VTK\lib\vtk-5.8\vtkRenderingPythonD.lib"
+"C:\Program Files\VTK\lib\vtk-5.8\vtkVolumeRenderingPythonD.lib"
+"C:\Program Files\VTK\lib\vtk-5.8\vtkHybridPythonD.lib"
+"C:\Program Files\VTK\lib\vtk-5.8\vtkWidgetsPythonD.lib"
+"C:\Program Files\VTK\lib\vtk-5.8\vtkInfovisPythonD.lib"
+"C:\Program Files\VTK\lib\vtk-5.8\vtkGeovisPythonD.lib"
+"C:\Program Files\VTK\lib\vtk-5.8\vtkViewsPythonD.lib"
+"C:\Program Files\VTK\lib\vtk-5.8\vtkChartsPythonD.lib"
+"C:\Program Files\VTK\lib\vtk-5.8\vtkPythonCore.lib"
+"C:\Program Files\VTK\lib\vtk-5.8\vtksys.lib"
+
+MedipyHMCGccXML:
+        unsigned int const nbVox=std::pow((double)cube_size, 3);
+        int const nbVoxInf=std::pow((double)sub_cube_size, 3);
+
+MedipyDiffusionGccXML errors not resolved:
+    typedef float BValueType;
+    typedef typename TInputImage::PointType DirectionType; 
+    typedef vnl_matrix<float> TensorType; 
+
+    virtual BValueType (((BYTE)(((DWORD_PTR)(()>>16)) & 0xff))) const { return this->m_BValue; };
+    virtual void SetBValue (const BValueType _arg) { ; if ( this->m_BValue != _arg ) { this->m_BValue = _arg; this->Modified(); } };
+    
+    DirectionType GetGradientDirection(unsigned int i);
+    void SetGradientDirection(unsigned int i, DirectionType bvec);
+    
+    virtual unsigned int GetSamplesCount () const { return this->m_SamplesCount; };
+
+medimax errors unsolved external sybols...
+imx_sort.c   file_3d.c
+add:
+double drand48()
+{
+  return ((double)(random()))/(1.+(double)(RAND_MAX));
+}
+
+int random()
+{
+  static int first=1;
+  if(first != 0)
+  {
+    srand((unsigned) time(NULL));
+    first = 0;
+  }
+
+  return rand();
+}
+
+double rint( double x)
+// Copyright (C) 2001 Tor M. Aamodt, University of Toronto
+// Permisssion to use for all purposes commercial and otherwise granted.
+// THIS MATERIAL IS PROVIDED "AS IS" WITHOUT WARRANTY, OR ANY CONDITION OR
+// OTHER TERM OF ANY KIND INCLUDING, WITHOUT LIMITATION, ANY WARRANTY
+// OF MERCHANTABILITY, SATISFACTORY QUALITY, OR FITNESS FOR A PARTICULAR
+// PURPOSE.
+{
+  double diff;
+    if( x > 0 ) {
+        __int64 xint = (__int64) (x+0.5);
+        if( xint % 2 ) {
+            // then we might have an even number...
+            diff = x - (double)xint;
+            if( diff == -0.5 )
+                return (double)(xint-1);
+        }
+        return (double)(xint);
+    } else {
+        __int64 xint = (__int64) (x-0.5);
+        if( xint % 2 ) {
+            // then we might have an even number...
+            diff = x - (double)xint;
+            if( diff == 0.5 )
+                return (double)(xint+1);
+        }
+        return (double)(xint);
+    }
+}
+
+
+medipy_hmc:
+HMCInitialize.cpp: add
+double rint( double x)
+// Copyright (C) 2001 Tor M. Aamodt, University of Toronto
+// Permisssion to use for all purposes commercial and otherwise granted.
+// THIS MATERIAL IS PROVIDED "AS IS" WITHOUT WARRANTY, OR ANY CONDITION OR
+// OTHER TERM OF ANY KIND INCLUDING, WITHOUT LIMITATION, ANY WARRANTY
+// OF MERCHANTABILITY, SATISFACTORY QUALITY, OR FITNESS FOR A PARTICULAR
+// PURPOSE.
+{
+	double diff;
+    if( x > 0 ) {
+        __int64 xint = (__int64) (x+0.5);
+        if( xint % 2 ) {
+            // then we might have an even number...
+            diff = x - (double)xint;
+            if( diff == -0.5 )
+                return (double)(xint-1);
+        }
+        return (double)(xint);
+    } else {
+        __int64 xint = (__int64) (x-0.5);
+        if( xint % 2 ) {
+            // then we might have an even number...
+            diff = x - (double)xint;
+            if( diff == 0.5 )
+                return (double)(xint+1);
+        }
+        return (double)(xint);
+    }
+}
+
+EM.cpp  HMCInitialize.cpp : add
+#define _USE_MATH_DEFINES // for C++
+#include <cmath>
+
+EM.cpp: change
+this->Forward(classe,t)=1./sqrt((double)NbClasses);
+this->SommePsi(classe,k) += 1/std::pow((double)NbClasses, 2);
+
+EM.cpp: add
+static inline double round(double val)
+{    
+    return floor(val + 0.5);
+}
+
+project property:
+"C:\Program Files\ITK\lib\itkdouble-conversion-4.6.lib"
+"C:\Program Files\ITK\lib\itksys-4.6.lib"
+"C:\Program Files\ITK\lib\itkvnl_algo-4.6.lib"
+"C:\Program Files\ITK\lib\itkvnl-4.6.lib"
+"C:\Program Files\ITK\lib\itkv3p_netlib-4.6.lib"
+"C:\Program Files\ITK\lib\ITKCommon-4.6.lib"
+"C:\Program Files\ITK\lib\itkNetlibSlatec-4.6.lib"
+"C:\Program Files\ITK\lib\ITKStatistics-4.6.lib"
+"C:\Program Files\ITK\lib\ITKIOImageBase-4.6.lib"
+"C:\Program Files\ITK\lib\ITKMesh-4.6.lib"
+"C:\Program Files\ITK\lib\itkzlib-4.6.lib"
+"C:\Program Files\ITK\lib\ITKMetaIO-4.6.lib"
+"C:\Program Files\ITK\lib\ITKSpatialObjects-4.6.lib"
+"C:\Program Files\ITK\lib\ITKPath-4.6.lib"
+"C:\Program Files\ITK\lib\ITKLabelMap-4.6.lib"
+"C:\Program Files\ITK\lib\ITKQuadEdgeMesh-4.6.lib"
+"C:\Program Files\ITK\lib\ITKOptimizers-4.6.lib"
+"C:\Program Files\ITK\lib\ITKPolynomials-4.6.lib"
+"C:\Program Files\ITK\lib\ITKBiasCorrection-4.6.lib"
+"C:\Program Files\ITK\lib\ITKBioCell-4.6.lib"
+"C:\Program Files\ITK\lib\ITKDICOMParser-4.6.lib"
+"C:\Program Files\ITK\lib\ITKEXPAT-4.6.lib"
+"C:\Program Files\ITK\lib\ITKIOXML-4.6.lib"
+"C:\Program Files\ITK\lib\ITKIOSpatialObjects-4.6.lib"
+"C:\Program Files\ITK\lib\ITKFEM-4.6.lib"
+"C:\Program Files\ITK\lib\ITKIOBMP-4.6.lib"
+"C:\Program Files\ITK\lib\ITKIOBioRad-4.6.lib"
+"C:\Program Files\ITK\lib\itkopenjpeg-4.6.lib"
+"C:\Program Files\ITK\lib\itkgdcmDICT-4.6.lib"
+"C:\Program Files\ITK\lib\itkgdcmMSFF-4.6.lib"
+"C:\Program Files\ITK\lib\ITKIOGDCM-4.6.lib"
+"C:\Program Files\ITK\lib\ITKIOIPL-4.6.lib"
+"C:\Program Files\ITK\lib\ITKIOGE-4.6.lib"
+"C:\Program Files\ITK\lib\ITKIOGIPL-4.6.lib"
+"C:\Program Files\ITK\lib\itkjpeg-4.6.lib"
+"C:\Program Files\ITK\lib\ITKIOJPEG-4.6.lib"
+"C:\Program Files\ITK\lib\ITKIOMeta-4.6.lib"
+"C:\Program Files\ITK\lib\ITKznz-4.6.lib"
+"C:\Program Files\ITK\lib\ITKniftiio-4.6.lib"
+"C:\Program Files\ITK\lib\ITKIONIFTI-4.6.lib"
+"C:\Program Files\ITK\lib\ITKNrrdIO-4.6.lib"
+"C:\Program Files\ITK\lib\ITKIONRRD-4.6.lib"
+"C:\Program Files\ITK\lib\itkpng-4.6.lib"
+"C:\Program Files\ITK\lib\ITKIOPNG-4.6.lib"
+"C:\Program Files\ITK\lib\ITKIOSiemens-4.6.lib"
+"C:\Program Files\ITK\lib\ITKIOStimulate-4.6.lib"
+"C:\Program Files\ITK\lib\itktiff-4.6.lib"
+"C:\Program Files\ITK\lib\ITKIOTIFF-4.6.lib"
+"C:\Program Files\ITK\lib\ITKIOTransformBase-4.6.lib"
+"C:\Program Files\ITK\lib\itkhdf5_cpp-4.6.lib"
+"C:\Program Files\ITK\lib\itkhdf5-4.6.lib"
+"C:\Program Files\ITK\lib\ITKIOTransformHDF5-4.6.lib"
+"C:\Program Files\ITK\lib\ITKIOTransformInsightLegacy-4.6.lib"
+"C:\Program Files\ITK\lib\ITKIOTransformMatlab-4.6.lib"
+"C:\Program Files\ITK\lib\ITKIOVTK-4.6.lib"
+"C:\Program Files\ITK\lib\ITKKLMRegionGrowing-4.6.lib"
+"C:\Program Files\ITK\lib\ITKIOLSM-4.6.lib"
+"C:\Program Files\ITK\lib\ITKVTK-4.6.lib"
+"C:\Program Files\ITK\lib\ITKWatersheds-4.6.lib"
+"C:\Program Files\ITK\lib\ITKDeprecated-4.6.lib"
+"C:\Program Files\ITK\lib\ITKgiftiio-4.6.lib"
+"C:\Program Files\ITK\lib\ITKIOCSV-4.6.lib"
+"C:\Program Files\ITK\lib\ITKIOHDF5-4.6.lib"
+"C:\Program Files\ITK\lib\ITKIOMRC-4.6.lib"
+"C:\Program Files\ITK\lib\ITKIOMesh-4.6.lib"
+"C:\Program Files\ITK\lib\ITKOptimizersv4-4.6.lib"
+"C:\Program Files\ITK\lib\ITKReview-4.6.lib"
+"C:\Program Files\ITK\lib\ITKVideoCore-4.6.lib"
+"C:\Program Files\ITK\lib\ITKVideoIO-4.6.lib"
+"C:\Program Files\ITK\lib\itkgdcmIOD-4.6.lib"
+"C:\Program Files\ITK\lib\itkgdcmDSED-4.6.lib"
+"C:\Program Files\ITK\lib\itkgdcmCommon-4.6.lib"
+"C:\Program Files\ITK\lib\itkgdcmjpeg8-4.6.lib"
+"C:\Program Files\ITK\lib\itkgdcmjpeg12-4.6.lib"
+"C:\Program Files\ITK\lib\itkgdcmjpeg16-4.6.lib"
+"C:\Program Files\ITK\lib\ITKVNLInstantiation-4.6.lib"
+"C:\Program Files\ITK\lib\itkv3p_lsqr-4.6.lib"
+"C:\Program Files\ITK\lib\itkvcl-4.6.lib"
+
+
+MeidpyIntensityPython:
+itkJointHistogramCalculator.txx: add
+double rint( double x)
+// Copyright (C) 2001 Tor M. Aamodt, University of Toronto
+// Permisssion to use for all purposes commercial and otherwise granted.
+// THIS MATERIAL IS PROVIDED "AS IS" WITHOUT WARRANTY, OR ANY CONDITION OR
+// OTHER TERM OF ANY KIND INCLUDING, WITHOUT LIMITATION, ANY WARRANTY
+// OF MERCHANTABILITY, SATISFACTORY QUALITY, OR FITNESS FOR A PARTICULAR
+// PURPOSE.
+{
+	double diff;
+    if( x > 0 ) {
+        __int64 xint = (__int64) (x+0.5);
+        if( xint % 2 ) {
+            // then we might have an even number...
+            diff = x - (double)xint;
+            if( diff == -0.5 )
+                return (double)(xint-1);
+        }
+        return (double)(xint);
+    } else {
+        __int64 xint = (__int64) (x-0.5);
+        if( xint % 2 ) {
+            // then we might have an even number...
+            diff = x - (double)xint;
+            if( diff == 0.5 )
+                return (double)(xint+1);
+        }
+        return (double)(xint);
+    }
+}
+
+add vtk libraries.
+
+MedipySegmentationPython:
+itkBETImageFilter.txx: add 
+#define M_PI       3.14159265358979323846
+
+_dataset_io     _generate_dicomdir    _scu:  
+add lib path: C:\Program Files\DCMTK\lib\
+"wrap.lib" un resolved
+
