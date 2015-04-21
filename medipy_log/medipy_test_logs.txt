@@ -1,0 +1,21 @@
+Add system path:
+MEDIPY_HOME: F:\medipy
+MEDIPY_PLUGINS_PATH: F:\medipy\plugins\
+PYTHONPATH: F:\medipy\lib\;F:\medipy\lib\Release
+
+copy files:
+
+all files in
+F:\medipy\plugins\diffusion\Release
+copy to
+F:\medipy\plugins\diffusion
+(for fiber_clustering.pyd, if not, ImportError!)
+
+
+
+
+all files in
+F:\medipy\plugins\medimax\Release
+copy to
+F:\medipy\lib\Release
+(if not, python report : ImportError: dll could not be found)

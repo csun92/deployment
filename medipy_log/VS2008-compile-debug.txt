@@ -59,6 +59,8 @@ MedipyDiffusionGccXML errors not resolved:
     void SetGradientDirection(unsigned int i, DirectionType bvec);
     
     virtual unsigned int GetSamplesCount () const { return this->m_SamplesCount; };
+add:
+#undef BValue 
 
 medimax errors unsolved external sybols...
 imx_sort.c   file_3d.c
@@ -280,3 +282,65 @@ _dataset_io     _generate_dicomdir    _scu:
 add lib path: C:\Program Files\DCMTK\lib\
 "wrap.lib" un resolved
 
+MedipyHMCPython:
+add source files:
+EM.cpp
+HMCInitializer.cpp
+
+MedipyDiffusionPython:
+itkStreamlineTractographyAlgorithm.txx
+error C2065: 'M_PI' : undeclared identifier
+error C2065: 'not' : undeclared identifier : :: change to !
+
+_dataset_io _dicomdir _scu: remove library dependancies:
+wrap.lib pthread.lib
+
+_traitement:
+additionnal dependancies:
+trai_3d.obj
+imx_matrix.obj
+imx_3d.obj
+oper_3d.obj
+segm_3d.obj
+imx_sort.obj
+imx_export_file.obj
+imx_log.obj
+mani_3d.obj
+ana_3d.obj
+otsu_3d.obj
+global.obj
+chps_3d.obj
+imx_misc.obj
+imx_math.obj
+mtch_3d.obj
+imx_file.obj
+imx_bspline.obj
+transformations_3d.obj
+divers_topo.obj
+imx_picture3d.obj
+minimisation_3d.obj
+distance_3d.obj
+mtch_robust_3d.obj
+norm_3d.obj
+multiresolution_3d.obj
+erreur_recalage.obj
+imx_head.obj
+imx_picture2d.obj
+imx_2d.obj
+analyse_intervalle.obj
+normalisation_topo.obj
+file_3d.obj
+morpho_3d.obj
+gradient_distance_3d.obj
+mtch_topo_3d.obj
+detection_anomalies_3d.obj
+croissance_de_region.obj
+queues_3d.obj
+distance_topo.obj
+optimisation_topo.obj
+differential_bias_correction.obj
+gradient_distance_topo.obj
+hessien_distance_topo.obj
+
+Additioanl Library Direcotries:
+F:\medipy\plugins\medimax\medimax.dir\Release\
