@@ -13,9 +13,64 @@ F:\medipy\plugins\diffusion
 
 
 
-
 all files in
 F:\medipy\plugins\medimax\Release
 copy to
 F:\medipy\lib\Release
 (if not, python report : ImportError: dll could not be found)
+
+
+F:\medipy\lib\medipy\gui\control\float_interval.py:
+replace wx.Color with wx.Colour
+
+
+
+unittest:
+F:\medipy\lib\tests\code\
+base:
+all pass
+gui:
+\base: all pass
+\brushes: all pass
+\dicom: 
+test_hierarchy_tree.py ---- test support only Linux environment
+io:
+all pass
+\dicom: 
+test_encapsulated_document.py failed <errors = 2>
+(
+the function calls a program 'file' which doesn't exist in windows!
+)
+itk:
+test_numpy_bridge.py FAILED <errors=7>
+(
+KeyError: 'itkTemplate : No template (<itkCType long double>, 3, 3) for the itk:
+:Matrix class'
+)
+network:
+\dicom:
+test_scu.py FAILED <errors = 3> WindowsError:
+(
+add C:\Program Files\DCMTK\bin to system path;
+DUL Association Rejected
+)
+
+vtk:
+all pass
+
+F:\medipy\plugins\diffusion\tests
+test_io.py FAILED <errors=1> WindowsError
+(
+try to delete a file that is being used by another program. maybe forgot to close?
+)
+
+F:\medipy\plugins\fsl\tests:
+all failed --- test path is linux path!
+
+F:\medipy\plugins\geometry\tests:
+all pass
+
+F:\medipy\plugins\intensity\tests:
+all pass
+
+nosetests --verbosity=2 --with-xunit --xunit-file=F:\unittests_log.xml F:\medipy\lib\tests\code\ F:\medipy\plugins\diffusion\tests F:\medipy\plugins\fsl\tests F:\medipy\plugins\geometry\tests F:\medipy\plugins\intensity\tests

@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite name="nosetests" tests="201" errors="41" failures="0" skip="0"><testcase classname="code.base.test_coordinate_system.TestCoordinateSystem" name="test_best_fitting_axes_aligned_matrix" time="0.000"></testcase><testcase classname="code.base.test_enum.TestEnum" name="test_int_creation" time="0.000"></testcase><testcase classname="code.base.test_enum.TestEnum" name="test_members" time="0.015"></testcase><testcase classname="code.base.test_enum.TestEnum" name="test_name" time="0.000"></testcase><testcase classname="code.base.test_enum.TestEnum" name="test_type" time="0.000"></testcase><testcase classname="code.base.test_enum.TestEnum" name="test_value_creation" time="0.000"></testcase><testcase classname="code.base.test_history.TestHistory" name="test_add_after_undo" time="0.000"></testcase><testcase classname="code.base.test_history.TestHistory" name="test_cursor" time="0.000"></testcase><testcase classname="code.base.test_history.TestHistory" name="test_cursor_limit" time="0.000"></testcase><testcase classname="code.base.test_history.TestHistory" name="test_empty" time="0.000"></testcase><testcase classname="code.base.test_history.TestHistory" name="test_limited_size" time="0.000"></testcase><testcase classname="code.base.test_history.TestHistory" name="test_multiple_commands" time="0.000"></testcase><testcase classname="code.base.test_history.TestHistory" name="test_one_command" time="0.000"></testcase><testcase classname="code.base.test_image.TestImage" name="test_as_array" time="0.000"><system-err><![CDATA[comparison to `None` will result in an elementwise object comparison in the future.
+]]></system-err></testcase><testcase classname="code.base.test_image.TestImage" name="test_constant_constructor" time="0.000"></testcase><testcase classname="code.base.test_image.TestImage" name="test_element_read" time="0.000"></testcase><testcase classname="code.base.test_image.TestImage" name="test_element_write" time="0.000"></testcase><testcase classname="code.base.test_image.TestImage" name="test_index_to_physical" time="0.000"></testcase><testcase classname="code.base.test_image.TestImage" name="test_initialized_constructor" time="0.000"></testcase><testcase classname="code.base.test_image.TestImage" name="test_inside" time="0.000"></testcase><testcase classname="code.base.test_image.TestImage" name="test_physical_to_index" time="0.000"></testcase><testcase classname="code.base.test_image.TestImage" name="test_slice_read" time="0.000"></testcase><testcase classname="code.base.test_image.TestImage" name="test_slice_write" time="0.000"></testcase><testcase classname="code.base.test_image.TestImage" name="test_uninitialized_constructor" time="0.000"></testcase><testcase classname="code.base.test_late_binding_property.TestLateBindingProperty" name="test" time="0.000"></testcase><testcase classname="code.base.test_observable.TestObservable" name="test_allowed_events" time="0.000"></testcase><testcase classname="code.base.test_observable.TestObservable" name="test_events" time="0.000"></testcase><testcase classname="code.base.test_observable.TestObservable" name="test_observers" time="0.000"></testcase><testcase classname="code.base.test_observable_list.TestObservableList" name="test_append" time="0.000"></testcase><testcase classname="code.base.test_observable_list.TestObservableList" name="test_delitem" time="0.000"></testcase><testcase classname="code.base.test_observable_list.TestObservableList" name="test_extend" time="0.000"></testcase><testcase classname="code.base.test_observable_list.TestObservableList" name="test_init_empty" time="0.000"></testcase><testcase classname="code.base.test_observable_list.TestObservableList" name="test_init_sequence" time="0.016"></testcase><testcase classname="code.base.test_observable_list.TestObservableList" name="test_insert" time="0.000"></testcase><testcase classname="code.base.test_observable_list.TestObservableList" name="test_pop" time="0.000"></testcase><testcase classname="code.base.test_observable_list.TestObservableList" name="test_remove" time="0.000"></testcase><testcase classname="code.base.test_observable_list.TestObservableList" name="test_reverse" time="0.000"></testcase><testcase classname="code.base.test_observable_list.TestObservableList" name="test_setitem" time="0.000"></testcase><testcase classname="code.base.test_observable_list.TestObservableList" name="test_sort" time="0.000"></testcase><testcase classname="code.base.test_property_synchronized.TestPropertySynchronized" name="test_children" time="0.000"></testcase><testcase classname="code.base.test_property_synchronized.TestPropertySynchronized" name="test_synchronization" time="0.000"></testcase><testcase classname="code.base.test_property_synchronized.TestPropertySynchronized" name="test_two_way_synchronization" time="0.000"></testcase><testcase classname="code.gui.base.test_preferences.TestPreferences" name="test_array" time="0.000"></testcase><testcase classname="code.gui.base.test_preferences.TestPreferences" name="test_boolean" time="0.000"></testcase><testcase classname="code.gui.base.test_preferences.TestPreferences" name="test_dict" time="0.000"></testcase><testcase classname="code.gui.base.test_preferences.TestPreferences" name="test_float" time="0.000"></testcase><testcase classname="code.gui.base.test_preferences.TestPreferences" name="test_float64" time="0.000"></testcase><testcase classname="code.gui.base.test_preferences.TestPreferences" name="test_int" time="0.000"></testcase><testcase classname="code.gui.base.test_preferences.TestPreferences" name="test_list" time="0.000"></testcase><testcase classname="code.gui.base.test_preferences.TestPreferences" name="test_str" time="0.000"></testcase><testcase classname="code.gui.base.test_preferences.TestPreferences" name="test_tuple" time="0.000"></testcase><testcase classname="code.gui.base.test_preferences.TestPreferences" name="test_unicode" time="0.000"></testcase><testcase classname="code.gui.brushes.test_circle.TestCircle" name="test_indices" time="0.000"><system-err><![CDATA[comparison to `None` will result in an elementwise object comparison in the future.
+]]></system-err></testcase><testcase classname="code.gui.brushes.test_cube.TestCube" name="test_indices" time="0.015"></testcase><testcase classname="code.gui.brushes.test_sphere.TestSphere" name="test_indices" time="0.000"></testcase><testcase classname="code.gui.brushes.test_square.TestSquare" name="test_indices" time="0.000"><system-err><![CDATA[comparison to `None` will result in an elementwise object comparison in the future.
+]]></system-err></testcase><testcase classname="code.io.dicom.routing.test_actions.TestActions" name="test_delete_element_absent" time="0.000"></testcase><testcase classname="code.io.dicom.routing.test_actions.TestActions" name="test_delete_element_present" time="0.000"></testcase><testcase classname="code.io.dicom.routing.test_actions.TestActions" name="test_empty_element" time="0.000"></testcase><testcase classname="code.io.dicom.routing.test_actions.TestActions" name="test_modify_dataset_callable" time="0.000"></testcase><testcase classname="code.io.dicom.routing.test_actions.TestActions" name="test_modify_dataset_dict" time="0.000"></testcase><testcase classname="code.io.dicom.routing.test_actions.TestActions" name="test_restore_dataset" time="0.000"></testcase><testcase classname="code.io.dicom.routing.test_actions.TestActions" name="test_set_element_absent" time="0.000"></testcase><testcase classname="code.io.dicom.routing.test_actions.TestActions" name="test_set_element_present" time="0.000"></testcase><testcase classname="code.io.dicom.routing.test_conditions.TestConditions" name="test_always_false" time="0.000"></testcase><testcase classname="code.io.dicom.routing.test_conditions.TestConditions" name="test_always_true" time="0.000"></testcase><testcase classname="code.io.dicom.routing.test_conditions.TestConditions" name="test_and" time="0.000"></testcase><testcase classname="code.io.dicom.routing.test_conditions.TestConditions" name="test_element_match" time="0.000"></testcase><testcase classname="code.io.dicom.routing.test_conditions.TestConditions" name="test_not" time="0.000"></testcase><testcase classname="code.io.dicom.routing.test_conditions.TestConditions" name="test_or" time="0.000"></testcase><testcase classname="code.io.dicom.routing.test_rule.TestRule" name="test_rule_match" time="0.000"></testcase><testcase classname="code.io.dicom.routing.test_rule.TestRule" name="test_rule_no_match" time="0.000"></testcase><testcase classname="code.io.dicom.test_dataset.TestDataSet" name="test_constructor_parameters" time="0.000"></testcase><testcase classname="code.io.dicom.test_dataset.TestDataSet" name="test_dict_interface" time="0.016"></testcase><testcase classname="code.io.dicom.test_dataset.TestDataSet" name="test_named_tag_access" time="0.000"></testcase><testcase classname="code.io.dicom.test_dataset.TestDataSet" name="test_numeric_tag_access" time="0.000"></testcase><testcase classname="code.io.dicom.test_dataset.TestDataSet" name="test_pixel_array" time="0.000"></testcase><testcase classname="code.io.dicom.test_dataset.TestDataSet" name="test_set_default" time="0.000"></testcase><testcase classname="code.io.dicom.test_dataset.TestDataSet" name="test_tags" time="0.000"></testcase><testcase classname="code.io.dicom.test_dataset_io.testDataSetIO" name="test_multiple_value" time="0.000"></testcase><testcase classname="code.io.dicom.test_dataset_io.testDataSetIO" name="test_sequence" time="0.016"></testcase><testcase classname="code.io.dicom.test_dataset_io.testDataSetIO" name="test_single_value" time="0.000"></testcase><testcase classname="code.io.dicom.test_dataset_io.testDataSetIO" name="test_type" time="0.015"></testcase><testcase classname="code.io.dicom.test_dataset_io.testDataSetIO" name="test_write" time="0.063"></testcase><testcase classname="code.io.dicom.test_dicom_series.TestDicomSeries" name="test_custom_name" time="3.390"></testcase><testcase classname="code.io.dicom.test_dicom_series.TestDicomSeries" name="test_description" time="4.782"></testcase><testcase classname="code.io.dicom.test_dicom_series.TestDicomSeries" name="test_root" time="0.000"></testcase><testcase classname="code.io.dicom.test_dicom_series.TestDicomSeries" name="test_uid" time="4.078"></testcase><testcase classname="code.io.dicom.test_encapsulated_document.TestEncapsulatedDocument" name="test_encapsulate_even_size" time="0.000"></testcase><testcase classname="code.io.dicom.test_encapsulated_document.TestEncapsulatedDocument" name="test_encapsulate_odd_size" time="0.000"></testcase><testcase classname="code.io.dicom.test_encapsulated_document.TestEncapsulatedDocument" name="test_expose_even_size" time="0.015"><error type="exceptions.WindowsError" message="[Error 2] The system cannot find the file specified"><![CDATA[Traceback (most recent call last):
+  File "C:\tools\python2\lib\unittest\case.py", line 329, in run
+    testMethod()
+  File "F:\medipy\lib\tests\code\io\dicom\test_encapsulated_document.py", line 53, in test_expose_even_size
+    dataset = medipy.io.dicom.encapsulated_document.encapsulate(input)
+  File "F:\medipy\lib\medipy\io\dicom\encapsulated_document.py", line 97, in encapsulate
+    stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+  File "C:\tools\python2\lib\subprocess.py", line 710, in __init__
+    errread, errwrite)
+  File "C:\tools\python2\lib\subprocess.py", line 958, in _execute_child
+    startupinfo)
+WindowsError: [Error 2] The system cannot find the file specified
+]]></error></testcase><testcase classname="code.io.dicom.test_encapsulated_document.TestEncapsulatedDocument" name="test_expose_odd_size" time="0.016"><error type="exceptions.WindowsError" message="[Error 2] The system cannot find the file specified"><![CDATA[Traceback (most recent call last):
+  File "C:\tools\python2\lib\unittest\case.py", line 329, in run
+    testMethod()
+  File "F:\medipy\lib\tests\code\io\dicom\test_encapsulated_document.py", line 67, in test_expose_odd_size
+    dataset = medipy.io.dicom.encapsulated_document.encapsulate(input)
+  File "F:\medipy\lib\medipy\io\dicom\encapsulated_document.py", line 97, in encapsulate
+    stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+  File "C:\tools\python2\lib\subprocess.py", line 710, in __init__
+    errread, errwrite)
+  File "C:\tools\python2\lib\subprocess.py", line 958, in _execute_child
+    startupinfo)
+WindowsError: [Error 2] The system cannot find the file specified
+]]></error></testcase><testcase classname="code.io.dicom.test_misc.TestMisc" name="test_generate_uid" time="0.000"></testcase><testcase classname="code.io.dicom.test_misc.TestMisc" name="test_parse_da" time="0.000"></testcase><testcase classname="code.io.dicom.test_misc.TestMisc" name="test_parse_tm" time="0.000"></testcase><testcase classname="code.io.dicom.test_mosaic.testMosaic" name="testAssembleTilesImageFilter" time="0.031"></testcase><testcase classname="code.io.dicom.test_normalization.TestDiffusion" name="test_siemens_0" time="0.141"></testcase><testcase classname="code.io.dicom.test_normalization.TestDiffusion" name="test_siemens_1000" time="0.156"></testcase><testcase classname="code.io.dicom.test_reconstruction.TestReconstruction" name="test_brainix" time="3.250"></testcase><testcase classname="code.io.dicom.test_reconstruction.TestReconstruction" name="test_nema_mf_mr_mammo" time="8.250"></testcase><testcase classname="code.io.dicom.test_reconstruction.TestReconstruction" name="test_nm" time="0.094"></testcase><testcase classname="code.io.dicom.test_split.TestSplit" name="test_series" time="3.687"></testcase><testcase classname="code.io.dicom.test_tag.TestTag" name="test_equality" time="0.000"></testcase><testcase classname="code.io.dicom.test_tag.TestTag" name="test_from_int" time="0.000"></testcase><testcase classname="code.io.dicom.test_tag.TestTag" name="test_from_tuple" time="0.000"></testcase><testcase classname="code.io.dicom.test_tag.TestTag" name="test_high_from_int" time="0.000"></testcase><testcase classname="code.io.dicom.test_tag.TestTag" name="test_high_from_tuple" time="0.000"></testcase><testcase classname="code.io.dicom.test_tag.TestTag" name="test_private" time="0.000"></testcase><testcase classname="code.io.test_image_annotation.TestImageAnnotation" name="test_list_xml" time="0.016"></testcase><testcase classname="code.io.test_image_annotation.TestImageAnnotation" name="test_xml" time="0.000"></testcase><testcase classname="code.io.test_raw.TestSchemes" name="test_can_load" time="1.047"></testcase><testcase classname="code.io.test_raw.TestSchemes" name="test_load" time="1.047"></testcase><testcase classname="code.io.test_schemes.TestSchemes" name="test_default" time="0.015"></testcase><testcase classname="code.io.test_schemes.TestSchemes" name="test_dicom" time="8.907"></testcase><testcase classname="code.io.test_schemes.TestSchemes" name="test_dicom_series" time="3.703"></testcase><testcase classname="code.io.test_schemes.TestSchemes" name="test_dicomdir" time="4.515"></testcase><testcase classname="code.io.test_schemes.TestSchemes" name="test_file" time="0.016"></testcase><testcase classname="code.io.test_schemes.TestSchemes" name="test_file_dicom" time="2.968"></testcase><testcase classname="code.io.test_serie.TestSerie" name="test_load_dicom" time="16.562"></testcase><testcase classname="code.io.test_serie.TestSerie" name="test_load_nifti" time="22.110"></testcase><testcase classname="code.io.test_serie.TestSerie" name="test_save_nifti" time="45.796"></testcase><testcase classname="code.itk.test_matrix_bridge.TestNumpyBridge" name="test_array_to_itk_matrix_flip" time="0.000"></testcase><testcase classname="code.itk.test_matrix_bridge.TestNumpyBridge" name="test_array_to_itk_matrix_no_flip" time="0.000"></testcase><testcase classname="code.itk.test_matrix_bridge.TestNumpyBridge" name="test_itk_matrix_to_array_flip" time="0.000"></testcase><testcase classname="code.itk.test_matrix_bridge.TestNumpyBridge" name="test_itk_matrix_to_array_no_flip" time="0.000"></testcase><testcase classname="code.itk.test_numpy_bridge.TestNumpyBridge" name="test_array_to_itk_image_with_transfer" time="0.078"><error type="exceptions.KeyError" message="'itkTemplate : No template (&lt;itkCType long double&gt;, 3, 3) for the itk::Matrix class'"><![CDATA[Traceback (most recent call last):
+  File "C:\tools\python2\lib\unittest\case.py", line 329, in run
+    testMethod()
+  File "F:\medipy\lib\tests\code\itk\test_numpy_bridge.py", line 69, in test_array_to_itk_image_with_transfer
+    self.itk_image_to_array(True)
+  File "F:\medipy\lib\tests\code\itk\test_numpy_bridge.py", line 49, in itk_image_to_array
+    itk_image = self._create_random_itk_image()
+  File "F:\medipy\lib\tests\code\itk\test_numpy_bridge.py", line 282, in _create_random_itk_image
+    itk_image.SetDirection(medipy.itk.array_to_itk_matrix(self.direction, True))
+  File "F:\medipy\lib\medipy\itk\numpy_bridge.py", line 24, in array_to_itk_matrix
+    matrix_type = itk.Matrix[itk_type, array.shape[-1], array.shape[-2]]
+  File "C:\Program Files\ITK\lib\ITK-4.6\Python\itkTemplate.py", line 263, in __getitem__
+    (str(parameters), self.__name__))
+KeyError: 'itkTemplate : No template (<itkCType long double>, 3, 3) for the itk::Matrix class'
+]]></error></testcase><testcase classname="code.itk.test_numpy_bridge.TestNumpyBridge" name="test_array_to_itk_image_without_transfer" time="0.094"><error type="exceptions.KeyError" message="'itkTemplate : No template (&lt;itkCType long double&gt;, 3, 3) for the itk::Matrix class'"><![CDATA[Traceback (most recent call last):
+  File "C:\tools\python2\lib\unittest\case.py", line 329, in run
+    testMethod()
+  File "F:\medipy\lib\tests\code\itk\test_numpy_bridge.py", line 66, in test_array_to_itk_image_without_transfer
+    self.itk_image_to_array(False)
+  File "F:\medipy\lib\tests\code\itk\test_numpy_bridge.py", line 49, in itk_image_to_array
+    itk_image = self._create_random_itk_image()
+  File "F:\medipy\lib\tests\code\itk\test_numpy_bridge.py", line 282, in _create_random_itk_image
+    itk_image.SetDirection(medipy.itk.array_to_itk_matrix(self.direction, True))
+  File "F:\medipy\lib\medipy\itk\numpy_bridge.py", line 24, in array_to_itk_matrix
+    matrix_type = itk.Matrix[itk_type, array.shape[-1], array.shape[-2]]
+  File "C:\Program Files\ITK\lib\ITK-4.6\Python\itkTemplate.py", line 263, in __getitem__
+    (str(parameters), self.__name__))
+KeyError: 'itkTemplate : No template (<itkCType long double>, 3, 3) for the itk::Matrix class'
+]]></error></testcase><testcase classname="code.itk.test_numpy_bridge.TestNumpyBridge" name="test_array_to_itk_vector_image_with_transfer" time="0.297"></testcase><testcase classname="code.itk.test_numpy_bridge.TestNumpyBridge" name="test_array_to_itk_vector_image_without_transfer" time="0.297"></testcase><testcase classname="code.itk.test_numpy_bridge.TestNumpyBridge" name="test_itk_image_to_medipy_image_with_image_with_transfer" time="0.094"><error type="exceptions.KeyError" message="'itkTemplate : No template (&lt;itkCType long double&gt;, 3, 3) for the itk::Matrix class'"><![CDATA[Traceback (most recent call last):
+  File "C:\tools\python2\lib\unittest\case.py", line 329, in run
+    testMethod()
+  File "F:\medipy\lib\tests\code\itk\test_numpy_bridge.py", line 179, in test_itk_image_to_medipy_image_with_image_with_transfer
+    self.itk_image_to_medipy_image(True, True)
+  File "F:\medipy\lib\tests\code\itk\test_numpy_bridge.py", line 144, in itk_image_to_medipy_image
+    itk_image = self._create_random_itk_image()
+  File "F:\medipy\lib\tests\code\itk\test_numpy_bridge.py", line 282, in _create_random_itk_image
+    itk_image.SetDirection(medipy.itk.array_to_itk_matrix(self.direction, True))
+  File "F:\medipy\lib\medipy\itk\numpy_bridge.py", line 24, in array_to_itk_matrix
+    matrix_type = itk.Matrix[itk_type, array.shape[-1], array.shape[-2]]
+  File "C:\Program Files\ITK\lib\ITK-4.6\Python\itkTemplate.py", line 263, in __getitem__
+    (str(parameters), self.__name__))
+KeyError: 'itkTemplate : No template (<itkCType long double>, 3, 3) for the itk::Matrix class'
+]]></error></testcase><testcase classname="code.itk.test_numpy_bridge.TestNumpyBridge" name="test_itk_image_to_medipy_image_with_image_without_transfer" time="0.078"><error type="exceptions.KeyError" message="'itkTemplate : No template (&lt;itkCType long double&gt;, 3, 3) for the itk::Matrix class'"><![CDATA[Traceback (most recent call last):
+  File "C:\tools\python2\lib\unittest\case.py", line 329, in run
+    testMethod()
+  File "F:\medipy\lib\tests\code\itk\test_numpy_bridge.py", line 173, in test_itk_image_to_medipy_image_with_image_without_transfer
+    self.itk_image_to_medipy_image(True, False)
+  File "F:\medipy\lib\tests\code\itk\test_numpy_bridge.py", line 144, in itk_image_to_medipy_image
+    itk_image = self._create_random_itk_image()
+  File "F:\medipy\lib\tests\code\itk\test_numpy_bridge.py", line 282, in _create_random_itk_image
+    itk_image.SetDirection(medipy.itk.array_to_itk_matrix(self.direction, True))
+  File "F:\medipy\lib\medipy\itk\numpy_bridge.py", line 24, in array_to_itk_matrix
+    matrix_type = itk.Matrix[itk_type, array.shape[-1], array.shape[-2]]
+  File "C:\Program Files\ITK\lib\ITK-4.6\Python\itkTemplate.py", line 263, in __getitem__
+    (str(parameters), self.__name__))
+KeyError: 'itkTemplate : No template (<itkCType long double>, 3, 3) for the itk::Matrix class'
+]]></error></testcase><testcase classname="code.itk.test_numpy_bridge.TestNumpyBridge" name="test_itk_image_to_medipy_image_without_image_with_transfer" time="0.078"><error type="exceptions.KeyError" message="'itkTemplate : No template (&lt;itkCType long double&gt;, 3, 3) for the itk::Matrix class'"><![CDATA[Traceback (most recent call last):
+  File "C:\tools\python2\lib\unittest\case.py", line 329, in run
+    testMethod()
+  File "F:\medipy\lib\tests\code\itk\test_numpy_bridge.py", line 176, in test_itk_image_to_medipy_image_without_image_with_transfer
+    self.itk_image_to_medipy_image(False, True)
+  File "F:\medipy\lib\tests\code\itk\test_numpy_bridge.py", line 144, in itk_image_to_medipy_image
+    itk_image = self._create_random_itk_image()
+  File "F:\medipy\lib\tests\code\itk\test_numpy_bridge.py", line 282, in _create_random_itk_image
+    itk_image.SetDirection(medipy.itk.array_to_itk_matrix(self.direction, True))
+  File "F:\medipy\lib\medipy\itk\numpy_bridge.py", line 24, in array_to_itk_matrix
+    matrix_type = itk.Matrix[itk_type, array.shape[-1], array.shape[-2]]
+  File "C:\Program Files\ITK\lib\ITK-4.6\Python\itkTemplate.py", line 263, in __getitem__
+    (str(parameters), self.__name__))
+KeyError: 'itkTemplate : No template (<itkCType long double>, 3, 3) for the itk::Matrix class'
+]]></error></testcase><testcase classname="code.itk.test_numpy_bridge.TestNumpyBridge" name="test_itk_vector_image_to_array_with_transfer" time="0.032"><error type="exceptions.KeyError" message="'itkTemplate : No template (&lt;itkCType long double&gt;, 3, 3) for the itk::Matrix class'"><![CDATA[Traceback (most recent call last):
+  File "C:\tools\python2\lib\unittest\case.py", line 329, in run
+    testMethod()
+  File "F:\medipy\lib\tests\code\itk\test_numpy_bridge.py", line 115, in test_itk_vector_image_to_array_with_transfer
+    self.itk_vector_image_to_array(True)
+  File "F:\medipy\lib\tests\code\itk\test_numpy_bridge.py", line 95, in itk_vector_image_to_array
+    itk_image = self._create_random_itk_vector_image()
+  File "F:\medipy\lib\tests\code\itk\test_numpy_bridge.py", line 302, in _create_random_itk_vector_image
+    itk_image.SetDirection(medipy.itk.array_to_itk_matrix(self.direction, True))
+  File "F:\medipy\lib\medipy\itk\numpy_bridge.py", line 24, in array_to_itk_matrix
+    matrix_type = itk.Matrix[itk_type, array.shape[-1], array.shape[-2]]
+  File "C:\Program Files\ITK\lib\ITK-4.6\Python\itkTemplate.py", line 263, in __getitem__
+    (str(parameters), self.__name__))
+KeyError: 'itkTemplate : No template (<itkCType long double>, 3, 3) for the itk::Matrix class'
+]]></error></testcase><testcase classname="code.itk.test_numpy_bridge.TestNumpyBridge" name="test_itk_vector_image_to_array_without_transfer" time="0.015"><error type="exceptions.KeyError" message="'itkTemplate : No template (&lt;itkCType long double&gt;, 3, 3) for the itk::Matrix class'"><![CDATA[Traceback (most recent call last):
+  File "C:\tools\python2\lib\unittest\case.py", line 329, in run
+    testMethod()
+  File "F:\medipy\lib\tests\code\itk\test_numpy_bridge.py", line 112, in test_itk_vector_image_to_array_without_transfer
+    self.itk_vector_image_to_array(False)
+  File "F:\medipy\lib\tests\code\itk\test_numpy_bridge.py", line 95, in itk_vector_image_to_array
+    itk_image = self._create_random_itk_vector_image()
+  File "F:\medipy\lib\tests\code\itk\test_numpy_bridge.py", line 302, in _create_random_itk_vector_image
+    itk_image.SetDirection(medipy.itk.array_to_itk_matrix(self.direction, True))
+  File "F:\medipy\lib\medipy\itk\numpy_bridge.py", line 24, in array_to_itk_matrix
+    matrix_type = itk.Matrix[itk_type, array.shape[-1], array.shape[-2]]
+  File "C:\Program Files\ITK\lib\ITK-4.6\Python\itkTemplate.py", line 263, in __getitem__
+    (str(parameters), self.__name__))
+KeyError: 'itkTemplate : No template (<itkCType long double>, 3, 3) for the itk::Matrix class'
+]]></error></testcase><testcase classname="code.itk.test_numpy_bridge.TestNumpyBridge" name="test_medipy_image_to_itk_image_with_transfer" time="0.219"></testcase><testcase classname="code.itk.test_numpy_bridge.TestNumpyBridge" name="test_medipy_image_to_itk_image_without_transfer" time="0.219"></testcase><testcase classname="code.itk.test_numpy_bridge.TestNumpyBridge" name="test_medipy_image_to_itk_vector_image_without_transfer" time="0.312"></testcase><testcase classname="code.network.dicom.test_scu.TestSCU" name="test_echo" time="0.063"><error type="medipy.base.exception.Exception" message="DUL Association Rejected"><![CDATA[Traceback (most recent call last):
+  File "C:\tools\python2\lib\unittest\case.py", line 329, in run
+    testMethod()
+  File "F:\medipy\lib\tests\code\network\dicom\test_scu.py", line 63, in test_echo
+    echo()
+  File "F:\medipy\lib\medipy\network\dicom\scu\scu.py", line 124, in __call__
+    def __call__(self): return _scu.Echo___call__(self)
+Exception: DUL Association Rejected
+]]></error></testcase><testcase classname="code.network.dicom.test_scu.TestSCU" name="test_find" time="0.031"><error type="medipy.base.exception.Exception" message="DUL Association Rejected"><![CDATA[Traceback (most recent call last):
+  File "C:\tools\python2\lib\unittest\case.py", line 329, in run
+    testMethod()
+  File "F:\medipy\lib\tests\code\network\dicom\test_scu.py", line 71, in test_find
+    result = find()
+  File "F:\medipy\lib\medipy\network\dicom\scu\scu.py", line 142, in __call__
+    def __call__(self): return _scu.Find___call__(self)
+Exception: DUL Association Rejected
+]]></error></testcase><testcase classname="code.network.dicom.test_scu.TestSCU" name="test_store" time="0.109"><error type="medipy.base.exception.Exception" message=""><![CDATA[Traceback (most recent call last):
+  File "C:\tools\python2\lib\unittest\case.py", line 329, in run
+    testMethod()
+  File "F:\medipy\lib\tests\code\network\dicom\test_scu.py", line 90, in test_store
+    store()
+  File "F:\medipy\lib\medipy\network\dicom\scu\Store.py", line 108, in __call__
+    self._build_command(config_filename, datasets_tmpdir)
+  File "F:\medipy\lib\medipy\network\dicom\scu\Store.py", line 134, in _build_command
+    raise medipy.base.Exception(stderr)
+Exception
+]]></error></testcase><testcase classname="code.vtk.test_array_bridge.TestArrayBridge" name="test_array_to_vtk_image_complex_vector_with_copy" time="0.016"></testcase><testcase classname="code.vtk.test_array_bridge.TestArrayBridge" name="test_array_to_vtk_image_complex_vector_without_copy" time="0.000"></testcase><testcase classname="code.vtk.test_array_bridge.TestArrayBridge" name="test_array_to_vtk_image_complex_with_copy" time="0.015"></testcase><testcase classname="code.vtk.test_array_bridge.TestArrayBridge" name="test_array_to_vtk_image_complex_without_copy" time="0.000"></testcase><testcase classname="code.vtk.test_array_bridge.TestArrayBridge" name="test_array_to_vtk_image_scalar_with_copy" time="0.000"></testcase><testcase classname="code.vtk.test_array_bridge.TestArrayBridge" name="test_array_to_vtk_image_scalar_without_copy" time="0.000"></testcase><testcase classname="code.vtk.test_array_bridge.TestArrayBridge" name="test_array_to_vtk_image_vector_with_copy" time="0.000"></testcase><testcase classname="code.vtk.test_array_bridge.TestArrayBridge" name="test_array_to_vtk_image_vector_without_copy" time="0.000"></testcase><testcase classname="code.vtk.test_array_bridge.TestArrayBridge" name="test_vtk_image_to_array_scalar" time="0.000"></testcase><testcase classname="code.vtk.test_array_bridge.TestArrayBridge" name="test_vtk_image_to_array_vector" time="0.016"></testcase><testcase classname="code.vtk.test_array_bridge.TestArrayBridge" name="test_vtk_image_to_medipy_image_scalar" time="0.000"></testcase><testcase classname="code.vtk.test_array_bridge.TestArrayBridge" name="test_vtk_image_to_medipy_image_vector" time="0.000"></testcase><testcase classname="test_estimation.TestEstimation" name="test_least_squares" time="0.015"></testcase><testcase classname="test_io.TestIO" name="test_itk_io" time="0.017"></testcase><testcase classname="test_io.TestIO" name="test_vtk_io" time="0.030"><error type="exceptions.WindowsError" message="[Error 32] The process cannot access the file because it is being used by another process: 'c:\\users\\sun\\appdata\\local\\temp\\tmpsbbu7u\\tensors.vtk'"><![CDATA[Traceback (most recent call last):
+  File "C:\tools\python2\lib\unittest\case.py", line 329, in run
+    testMethod()
+  File "F:\medipy\plugins\diffusion\tests\test_io.py", line 75, in test_vtk_io
+    shutil.rmtree(directory)
+  File "C:\tools\python2\lib\shutil.py", line 252, in rmtree
+    onerror(os.remove, fullname, sys.exc_info())
+  File "C:\tools\python2\lib\shutil.py", line 250, in rmtree
+    os.remove(fullname)
+WindowsError: [Error 32] The process cannot access the file because it is being used by another process: 'c:\\users\\sun\\appdata\\local\\temp\\tmpsbbu7u\\tensors.vtk'
+]]></error></testcase><testcase classname="test_scalars.TestScalars" name="test_fractional_anisotropy" time="0.000"></testcase><testcase classname="test_scalars.TestScalars" name="test_mean_diffusivity" time="0.016"></testcase><testcase classname="test_tractography.TestTractography" name="test_create_object_3d_with_clusters" time="0.000"></testcase><testcase classname="test_tractography.TestTractography" name="test_create_object_3d_without_clusters" time="0.000"></testcase><testcase classname="test_tractography.TestTractography" name="test_local_skeleton_clustering" time="0.015"></testcase><testcase classname="test_tractography.TestTractography" name="test_skeleton" time="0.000"></testcase><testcase classname="test_tractography.TestTractography" name="test_streamline" time="0.000"></testcase><testcase classname="test_utils.TestUtils" name="test_compose_spectral" time="0.000"></testcase><testcase classname="test_utils.TestUtils" name="test_dti33to6" time="0.000"></testcase><testcase classname="test_utils.TestUtils" name="test_dti6to33" time="0.000"></testcase><testcase classname="test_utils.TestUtils" name="test_exp_transformation" time="0.000"></testcase><testcase classname="test_utils.TestUtils" name="test_log_transformation" time="0.000"></testcase><testcase classname="test_utils.TestUtils" name="test_spectral_decomposition" time="0.000"></testcase><testcase classname="test_bet.TestBET" name="test_basic" time="0.000"><error type="medipy.base.exception.Exception" message="No such file: /etc/fsl/fsl.sh"><![CDATA[Traceback (most recent call last):
+  File "C:\tools\python2\lib\unittest\case.py", line 320, in run
+    self.setUp()
+  File "F:\medipy\plugins\fsl\tests\test_bet.py", line 8, in setUp
+    self.bet = medipy.fsl.BET()
+  File "F:\medipy\plugins\fsl\bet.py", line 53, in __init__
+    super(BET, self).__init__(*args, **kwargs)
+  File "F:\medipy\plugins\fsl\fsl_tool.py", line 42, in __init__
+    self.fsl_environment = fsl_environment or utils.environment()
+  File "F:\medipy\plugins\fsl\utils.py", line 24, in environment
+    raise medipy.base.Exception("No such file: {0}".format(fsl_sh))
+Exception: No such file: /etc/fsl/fsl.sh
+]]></error></testcase><testcase classname="test_bet.TestBET" name="test_brain_mask" time="0.000"><error type="medipy.base.exception.Exception" message="No such file: /etc/fsl/fsl.sh"><![CDATA[Traceback (most recent call last):
+  File "C:\tools\python2\lib\unittest\case.py", line 320, in run
+    self.setUp()
+  File "F:\medipy\plugins\fsl\tests\test_bet.py", line 8, in setUp
+    self.bet = medipy.fsl.BET()
+  File "F:\medipy\plugins\fsl\bet.py", line 53, in __init__
+    super(BET, self).__init__(*args, **kwargs)
+  File "F:\medipy\plugins\fsl\fsl_tool.py", line 42, in __init__
+    self.fsl_environment = fsl_environment or utils.environment()
+  File "F:\medipy\plugins\fsl\utils.py", line 24, in environment
+    raise medipy.base.Exception("No such file: {0}".format(fsl_sh))
+Exception: No such file: /etc/fsl/fsl.sh
+]]></error></testcase><testcase classname="test_bet.TestBET" name="test_center_of_gravity" time="0.000"><error type="medipy.base.exception.Exception" message="No such file: /etc/fsl/fsl.sh"><![CDATA[Traceback (most recent call last):
+  File "C:\tools\python2\lib\unittest\case.py", line 320, in run
+    self.setUp()
+  File "F:\medipy\plugins\fsl\tests\test_bet.py", line 8, in setUp
+    self.bet = medipy.fsl.BET()
+  File "F:\medipy\plugins\fsl\bet.py", line 53, in __init__
+    super(BET, self).__init__(*args, **kwargs)
+  File "F:\medipy\plugins\fsl\fsl_tool.py", line 42, in __init__
+    self.fsl_environment = fsl_environment or utils.environment()
+  File "F:\medipy\plugins\fsl\utils.py", line 24, in environment
+    raise medipy.base.Exception("No such file: {0}".format(fsl_sh))
+Exception: No such file: /etc/fsl/fsl.sh
+]]></error></testcase><testcase classname="test_bet.TestBET" name="test_gradient_threshold" time="0.000"><error type="medipy.base.exception.Exception" message="No such file: /etc/fsl/fsl.sh"><![CDATA[Traceback (most recent call last):
+  File "C:\tools\python2\lib\unittest\case.py", line 320, in run
+    self.setUp()
+  File "F:\medipy\plugins\fsl\tests\test_bet.py", line 8, in setUp
+    self.bet = medipy.fsl.BET()
+  File "F:\medipy\plugins\fsl\bet.py", line 53, in __init__
+    super(BET, self).__init__(*args, **kwargs)
+  File "F:\medipy\plugins\fsl\fsl_tool.py", line 42, in __init__
+    self.fsl_environment = fsl_environment or utils.environment()
+  File "F:\medipy\plugins\fsl\utils.py", line 24, in environment
+    raise medipy.base.Exception("No such file: {0}".format(fsl_sh))
+Exception: No such file: /etc/fsl/fsl.sh
+]]></error></testcase><testcase classname="test_bet.TestBET" name="test_head_radius" time="0.000"><error type="medipy.base.exception.Exception" message="No such file: /etc/fsl/fsl.sh"><![CDATA[Traceback (most recent call last):
+  File "C:\tools\python2\lib\unittest\case.py", line 320, in run
+    self.setUp()
+  File "F:\medipy\plugins\fsl\tests\test_bet.py", line 8, in setUp
+    self.bet = medipy.fsl.BET()
+  File "F:\medipy\plugins\fsl\bet.py", line 53, in __init__
+    super(BET, self).__init__(*args, **kwargs)
+  File "F:\medipy\plugins\fsl\fsl_tool.py", line 42, in __init__
+    self.fsl_environment = fsl_environment or utils.environment()
+  File "F:\medipy\plugins\fsl\utils.py", line 24, in environment
+    raise medipy.base.Exception("No such file: {0}".format(fsl_sh))
+Exception: No such file: /etc/fsl/fsl.sh
+]]></error></testcase><testcase classname="test_bet.TestBET" name="test_intensity_threshold" time="0.000"><error type="medipy.base.exception.Exception" message="No such file: /etc/fsl/fsl.sh"><![CDATA[Traceback (most recent call last):
+  File "C:\tools\python2\lib\unittest\case.py", line 320, in run
+    self.setUp()
+  File "F:\medipy\plugins\fsl\tests\test_bet.py", line 8, in setUp
+    self.bet = medipy.fsl.BET()
+  File "F:\medipy\plugins\fsl\bet.py", line 53, in __init__
+    super(BET, self).__init__(*args, **kwargs)
+  File "F:\medipy\plugins\fsl\fsl_tool.py", line 42, in __init__
+    self.fsl_environment = fsl_environment or utils.environment()
+  File "F:\medipy\plugins\fsl\utils.py", line 24, in environment
+    raise medipy.base.Exception("No such file: {0}".format(fsl_sh))
+Exception: No such file: /etc/fsl/fsl.sh
+]]></error></testcase><testcase classname="test_bet.TestBET" name="test_outline" time="0.000"><error type="medipy.base.exception.Exception" message="No such file: /etc/fsl/fsl.sh"><![CDATA[Traceback (most recent call last):
+  File "C:\tools\python2\lib\unittest\case.py", line 320, in run
+    self.setUp()
+  File "F:\medipy\plugins\fsl\tests\test_bet.py", line 8, in setUp
+    self.bet = medipy.fsl.BET()
+  File "F:\medipy\plugins\fsl\bet.py", line 53, in __init__
+    super(BET, self).__init__(*args, **kwargs)
+  File "F:\medipy\plugins\fsl\fsl_tool.py", line 42, in __init__
+    self.fsl_environment = fsl_environment or utils.environment()
+  File "F:\medipy\plugins\fsl\utils.py", line 24, in environment
+    raise medipy.base.Exception("No such file: {0}".format(fsl_sh))
+Exception: No such file: /etc/fsl/fsl.sh
+]]></error></testcase><testcase classname="test_bet.TestBET" name="test_robust" time="0.000"><error type="medipy.base.exception.Exception" message="No such file: /etc/fsl/fsl.sh"><![CDATA[Traceback (most recent call last):
+  File "C:\tools\python2\lib\unittest\case.py", line 320, in run
+    self.setUp()
+  File "F:\medipy\plugins\fsl\tests\test_bet.py", line 8, in setUp
+    self.bet = medipy.fsl.BET()
+  File "F:\medipy\plugins\fsl\bet.py", line 53, in __init__
+    super(BET, self).__init__(*args, **kwargs)
+  File "F:\medipy\plugins\fsl\fsl_tool.py", line 42, in __init__
+    self.fsl_environment = fsl_environment or utils.environment()
+  File "F:\medipy\plugins\fsl\utils.py", line 24, in environment
+    raise medipy.base.Exception("No such file: {0}".format(fsl_sh))
+Exception: No such file: /etc/fsl/fsl.sh
+]]></error></testcase><testcase classname="test_bet.TestBET" name="test_skull" time="0.000"><error type="medipy.base.exception.Exception" message="No such file: /etc/fsl/fsl.sh"><![CDATA[Traceback (most recent call last):
+  File "C:\tools\python2\lib\unittest\case.py", line 320, in run
+    self.setUp()
+  File "F:\medipy\plugins\fsl\tests\test_bet.py", line 8, in setUp
+    self.bet = medipy.fsl.BET()
+  File "F:\medipy\plugins\fsl\bet.py", line 53, in __init__
+    super(BET, self).__init__(*args, **kwargs)
+  File "F:\medipy\plugins\fsl\fsl_tool.py", line 42, in __init__
+    self.fsl_environment = fsl_environment or utils.environment()
+  File "F:\medipy\plugins\fsl\utils.py", line 24, in environment
+    raise medipy.base.Exception("No such file: {0}".format(fsl_sh))
+Exception: No such file: /etc/fsl/fsl.sh
+]]></error></testcase><testcase classname="test_siena.TestSiena" name="test_basic" time="0.000"><error type="medipy.base.exception.Exception" message="No such file: /etc/fsl/fsl.sh"><![CDATA[Traceback (most recent call last):
+  File "C:\tools\python2\lib\unittest\case.py", line 320, in run
+    self.setUp()
+  File "F:\medipy\plugins\fsl\tests\test_siena.py", line 9, in setUp
+    self.siena = medipy.fsl.Siena()
+  File "F:\medipy\plugins\fsl\siena.py", line 42, in __init__
+    super(Siena, self).__init__(*args, **kwargs)
+  File "F:\medipy\plugins\fsl\fsl_tool.py", line 42, in __init__
+    self.fsl_environment = fsl_environment or utils.environment()
+  File "F:\medipy\plugins\fsl\utils.py", line 24, in environment
+    raise medipy.base.Exception("No such file: {0}".format(fsl_sh))
+Exception: No such file: /etc/fsl/fsl.sh
+]]></error></testcase><testcase classname="test_siena.TestSiena" name="test_default_output_directory" time="0.000"><error type="medipy.base.exception.Exception" message="No such file: /etc/fsl/fsl.sh"><![CDATA[Traceback (most recent call last):
+  File "C:\tools\python2\lib\unittest\case.py", line 320, in run
+    self.setUp()
+  File "F:\medipy\plugins\fsl\tests\test_siena.py", line 9, in setUp
+    self.siena = medipy.fsl.Siena()
+  File "F:\medipy\plugins\fsl\siena.py", line 42, in __init__
+    super(Siena, self).__init__(*args, **kwargs)
+  File "F:\medipy\plugins\fsl\fsl_tool.py", line 42, in __init__
+    self.fsl_environment = fsl_environment or utils.environment()
+  File "F:\medipy\plugins\fsl\utils.py", line 24, in environment
+    raise medipy.base.Exception("No such file: {0}".format(fsl_sh))
+Exception: No such file: /etc/fsl/fsl.sh
+]]></error></testcase><testcase classname="test_siena.TestSiena" name="test_ignore_downwards" time="0.000"><error type="medipy.base.exception.Exception" message="No such file: /etc/fsl/fsl.sh"><![CDATA[Traceback (most recent call last):
+  File "C:\tools\python2\lib\unittest\case.py", line 320, in run
+    self.setUp()
+  File "F:\medipy\plugins\fsl\tests\test_siena.py", line 9, in setUp
+    self.siena = medipy.fsl.Siena()
+  File "F:\medipy\plugins\fsl\siena.py", line 42, in __init__
+    super(Siena, self).__init__(*args, **kwargs)
+  File "F:\medipy\plugins\fsl\fsl_tool.py", line 42, in __init__
+    self.fsl_environment = fsl_environment or utils.environment()
+  File "F:\medipy\plugins\fsl\utils.py", line 24, in environment
+    raise medipy.base.Exception("No such file: {0}".format(fsl_sh))
+Exception: No such file: /etc/fsl/fsl.sh
+]]></error></testcase><testcase classname="test_siena.TestSiena" name="test_ignore_upwards" time="0.000"><error type="medipy.base.exception.Exception" message="No such file: /etc/fsl/fsl.sh"><![CDATA[Traceback (most recent call last):
+  File "C:\tools\python2\lib\unittest\case.py", line 320, in run
+    self.setUp()
+  File "F:\medipy\plugins\fsl\tests\test_siena.py", line 9, in setUp
+    self.siena = medipy.fsl.Siena()
+  File "F:\medipy\plugins\fsl\siena.py", line 42, in __init__
+    super(Siena, self).__init__(*args, **kwargs)
+  File "F:\medipy\plugins\fsl\fsl_tool.py", line 42, in __init__
+    self.fsl_environment = fsl_environment or utils.environment()
+  File "F:\medipy\plugins\fsl\utils.py", line 24, in environment
+    raise medipy.base.Exception("No such file: {0}".format(fsl_sh))
+Exception: No such file: /etc/fsl/fsl.sh
+]]></error></testcase><testcase classname="test_siena.TestSiena" name="test_masking" time="0.000"><error type="medipy.base.exception.Exception" message="No such file: /etc/fsl/fsl.sh"><![CDATA[Traceback (most recent call last):
+  File "C:\tools\python2\lib\unittest\case.py", line 320, in run
+    self.setUp()
+  File "F:\medipy\plugins\fsl\tests\test_siena.py", line 9, in setUp
+    self.siena = medipy.fsl.Siena()
+  File "F:\medipy\plugins\fsl\siena.py", line 42, in __init__
+    super(Siena, self).__init__(*args, **kwargs)
+  File "F:\medipy\plugins\fsl\fsl_tool.py", line 42, in __init__
+    self.fsl_environment = fsl_environment or utils.environment()
+  File "F:\medipy\plugins\fsl\utils.py", line 24, in environment
+    raise medipy.base.Exception("No such file: {0}".format(fsl_sh))
+Exception: No such file: /etc/fsl/fsl.sh
+]]></error></testcase><testcase classname="test_siena.TestSiena" name="test_output_directory" time="0.000"><error type="medipy.base.exception.Exception" message="No such file: /etc/fsl/fsl.sh"><![CDATA[Traceback (most recent call last):
+  File "C:\tools\python2\lib\unittest\case.py", line 320, in run
+    self.setUp()
+  File "F:\medipy\plugins\fsl\tests\test_siena.py", line 9, in setUp
+    self.siena = medipy.fsl.Siena()
+  File "F:\medipy\plugins\fsl\siena.py", line 42, in __init__
+    super(Siena, self).__init__(*args, **kwargs)
+  File "F:\medipy\plugins\fsl\fsl_tool.py", line 42, in __init__
+    self.fsl_environment = fsl_environment or utils.environment()
+  File "F:\medipy\plugins\fsl\utils.py", line 24, in environment
+    raise medipy.base.Exception("No such file: {0}".format(fsl_sh))
+Exception: No such file: /etc/fsl/fsl.sh
+]]></error></testcase><testcase classname="test_siena.TestSiena" name="test_parse_report" time="0.000"><error type="medipy.base.exception.Exception" message="No such file: /etc/fsl/fsl.sh"><![CDATA[Traceback (most recent call last):
+  File "C:\tools\python2\lib\unittest\case.py", line 320, in run
+    self.setUp()
+  File "F:\medipy\plugins\fsl\tests\test_siena.py", line 9, in setUp
+    self.siena = medipy.fsl.Siena()
+  File "F:\medipy\plugins\fsl\siena.py", line 42, in __init__
+    super(Siena, self).__init__(*args, **kwargs)
+  File "F:\medipy\plugins\fsl\fsl_tool.py", line 42, in __init__
+    self.fsl_environment = fsl_environment or utils.environment()
+  File "F:\medipy\plugins\fsl\utils.py", line 24, in environment
+    raise medipy.base.Exception("No such file: {0}".format(fsl_sh))
+Exception: No such file: /etc/fsl/fsl.sh
+]]></error></testcase><testcase classname="test_siena.TestSiena" name="test_t2_weighted_input" time="0.000"><error type="medipy.base.exception.Exception" message="No such file: /etc/fsl/fsl.sh"><![CDATA[Traceback (most recent call last):
+  File "C:\tools\python2\lib\unittest\case.py", line 320, in run
+    self.setUp()
+  File "F:\medipy\plugins\fsl\tests\test_siena.py", line 9, in setUp
+    self.siena = medipy.fsl.Siena()
+  File "F:\medipy\plugins\fsl\siena.py", line 42, in __init__
+    super(Siena, self).__init__(*args, **kwargs)
+  File "F:\medipy\plugins\fsl\fsl_tool.py", line 42, in __init__
+    self.fsl_environment = fsl_environment or utils.environment()
+  File "F:\medipy\plugins\fsl\utils.py", line 24, in environment
+    raise medipy.base.Exception("No such file: {0}".format(fsl_sh))
+Exception: No such file: /etc/fsl/fsl.sh
+]]></error></testcase><testcase classname="test_siena.TestSiena" name="test_two_class_segmentation" time="0.000"><error type="medipy.base.exception.Exception" message="No such file: /etc/fsl/fsl.sh"><![CDATA[Traceback (most recent call last):
+  File "C:\tools\python2\lib\unittest\case.py", line 320, in run
+    self.setUp()
+  File "F:\medipy\plugins\fsl\tests\test_siena.py", line 9, in setUp
+    self.siena = medipy.fsl.Siena()
+  File "F:\medipy\plugins\fsl\siena.py", line 42, in __init__
+    super(Siena, self).__init__(*args, **kwargs)
+  File "F:\medipy\plugins\fsl\fsl_tool.py", line 42, in __init__
+    self.fsl_environment = fsl_environment or utils.environment()
+  File "F:\medipy\plugins\fsl\utils.py", line 24, in environment
+    raise medipy.base.Exception("No such file: {0}".format(fsl_sh))
+Exception: No such file: /etc/fsl/fsl.sh
+]]></error></testcase><testcase classname="test_sienax.TestSienax" name="test_basic" time="0.000"><error type="medipy.base.exception.Exception" message="No such file: /etc/fsl/fsl.sh"><![CDATA[Traceback (most recent call last):
+  File "C:\tools\python2\lib\unittest\case.py", line 320, in run
+    self.setUp()
+  File "F:\medipy\plugins\fsl\tests\test_sienax.py", line 9, in setUp
+    self.sienax = medipy.fsl.Sienax()
+  File "F:\medipy\plugins\fsl\sienax.py", line 44, in __init__
+    super(Sienax, self).__init__(*args, **kwargs)
+  File "F:\medipy\plugins\fsl\fsl_tool.py", line 42, in __init__
+    self.fsl_environment = fsl_environment or utils.environment()
+  File "F:\medipy\plugins\fsl\utils.py", line 24, in environment
+    raise medipy.base.Exception("No such file: {0}".format(fsl_sh))
+Exception: No such file: /etc/fsl/fsl.sh
+]]></error></testcase><testcase classname="test_sienax.TestSienax" name="test_default_output_directory" time="0.000"><error type="medipy.base.exception.Exception" message="No such file: /etc/fsl/fsl.sh"><![CDATA[Traceback (most recent call last):
+  File "C:\tools\python2\lib\unittest\case.py", line 320, in run
+    self.setUp()
+  File "F:\medipy\plugins\fsl\tests\test_sienax.py", line 9, in setUp
+    self.sienax = medipy.fsl.Sienax()
+  File "F:\medipy\plugins\fsl\sienax.py", line 44, in __init__
+    super(Sienax, self).__init__(*args, **kwargs)
+  File "F:\medipy\plugins\fsl\fsl_tool.py", line 42, in __init__
+    self.fsl_environment = fsl_environment or utils.environment()
+  File "F:\medipy\plugins\fsl\utils.py", line 24, in environment
+    raise medipy.base.Exception("No such file: {0}".format(fsl_sh))
+Exception: No such file: /etc/fsl/fsl.sh
+]]></error></testcase><testcase classname="test_sienax.TestSienax" name="test_ignore_downwards" time="0.000"><error type="medipy.base.exception.Exception" message="No such file: /etc/fsl/fsl.sh"><![CDATA[Traceback (most recent call last):
+  File "C:\tools\python2\lib\unittest\case.py", line 320, in run
+    self.setUp()
+  File "F:\medipy\plugins\fsl\tests\test_sienax.py", line 9, in setUp
+    self.sienax = medipy.fsl.Sienax()
+  File "F:\medipy\plugins\fsl\sienax.py", line 44, in __init__
+    super(Sienax, self).__init__(*args, **kwargs)
+  File "F:\medipy\plugins\fsl\fsl_tool.py", line 42, in __init__
+    self.fsl_environment = fsl_environment or utils.environment()
+  File "F:\medipy\plugins\fsl\utils.py", line 24, in environment
+    raise medipy.base.Exception("No such file: {0}".format(fsl_sh))
+Exception: No such file: /etc/fsl/fsl.sh
+]]></error></testcase><testcase classname="test_sienax.TestSienax" name="test_ignore_upwards" time="0.000"><error type="medipy.base.exception.Exception" message="No such file: /etc/fsl/fsl.sh"><![CDATA[Traceback (most recent call last):
+  File "C:\tools\python2\lib\unittest\case.py", line 320, in run
+    self.setUp()
+  File "F:\medipy\plugins\fsl\tests\test_sienax.py", line 9, in setUp
+    self.sienax = medipy.fsl.Sienax()
+  File "F:\medipy\plugins\fsl\sienax.py", line 44, in __init__
+    super(Sienax, self).__init__(*args, **kwargs)
+  File "F:\medipy\plugins\fsl\fsl_tool.py", line 42, in __init__
+    self.fsl_environment = fsl_environment or utils.environment()
+  File "F:\medipy\plugins\fsl\utils.py", line 24, in environment
+    raise medipy.base.Exception("No such file: {0}".format(fsl_sh))
+Exception: No such file: /etc/fsl/fsl.sh
+]]></error></testcase><testcase classname="test_sienax.TestSienax" name="test_lesion_mask" time="0.000"><error type="medipy.base.exception.Exception" message="No such file: /etc/fsl/fsl.sh"><![CDATA[Traceback (most recent call last):
+  File "C:\tools\python2\lib\unittest\case.py", line 320, in run
+    self.setUp()
+  File "F:\medipy\plugins\fsl\tests\test_sienax.py", line 9, in setUp
+    self.sienax = medipy.fsl.Sienax()
+  File "F:\medipy\plugins\fsl\sienax.py", line 44, in __init__
+    super(Sienax, self).__init__(*args, **kwargs)
+  File "F:\medipy\plugins\fsl\fsl_tool.py", line 42, in __init__
+    self.fsl_environment = fsl_environment or utils.environment()
+  File "F:\medipy\plugins\fsl\utils.py", line 24, in environment
+    raise medipy.base.Exception("No such file: {0}".format(fsl_sh))
+Exception: No such file: /etc/fsl/fsl.sh
+]]></error></testcase><testcase classname="test_sienax.TestSienax" name="test_output_directory" time="0.000"><error type="medipy.base.exception.Exception" message="No such file: /etc/fsl/fsl.sh"><![CDATA[Traceback (most recent call last):
+  File "C:\tools\python2\lib\unittest\case.py", line 320, in run
+    self.setUp()
+  File "F:\medipy\plugins\fsl\tests\test_sienax.py", line 9, in setUp
+    self.sienax = medipy.fsl.Sienax()
+  File "F:\medipy\plugins\fsl\sienax.py", line 44, in __init__
+    super(Sienax, self).__init__(*args, **kwargs)
+  File "F:\medipy\plugins\fsl\fsl_tool.py", line 42, in __init__
+    self.fsl_environment = fsl_environment or utils.environment()
+  File "F:\medipy\plugins\fsl\utils.py", line 24, in environment
+    raise medipy.base.Exception("No such file: {0}".format(fsl_sh))
+Exception: No such file: /etc/fsl/fsl.sh
+]]></error></testcase><testcase classname="test_sienax.TestSienax" name="test_parse_report" time="0.000"><error type="medipy.base.exception.Exception" message="No such file: /etc/fsl/fsl.sh"><![CDATA[Traceback (most recent call last):
+  File "C:\tools\python2\lib\unittest\case.py", line 320, in run
+    self.setUp()
+  File "F:\medipy\plugins\fsl\tests\test_sienax.py", line 9, in setUp
+    self.sienax = medipy.fsl.Sienax()
+  File "F:\medipy\plugins\fsl\sienax.py", line 44, in __init__
+    super(Sienax, self).__init__(*args, **kwargs)
+  File "F:\medipy\plugins\fsl\fsl_tool.py", line 42, in __init__
+    self.fsl_environment = fsl_environment or utils.environment()
+  File "F:\medipy\plugins\fsl\utils.py", line 24, in environment
+    raise medipy.base.Exception("No such file: {0}".format(fsl_sh))
+Exception: No such file: /etc/fsl/fsl.sh
+]]></error></testcase><testcase classname="test_sienax.TestSienax" name="test_regional" time="0.000"><error type="medipy.base.exception.Exception" message="No such file: /etc/fsl/fsl.sh"><![CDATA[Traceback (most recent call last):
+  File "C:\tools\python2\lib\unittest\case.py", line 320, in run
+    self.setUp()
+  File "F:\medipy\plugins\fsl\tests\test_sienax.py", line 9, in setUp
+    self.sienax = medipy.fsl.Sienax()
+  File "F:\medipy\plugins\fsl\sienax.py", line 44, in __init__
+    super(Sienax, self).__init__(*args, **kwargs)
+  File "F:\medipy\plugins\fsl\fsl_tool.py", line 42, in __init__
+    self.fsl_environment = fsl_environment or utils.environment()
+  File "F:\medipy\plugins\fsl\utils.py", line 24, in environment
+    raise medipy.base.Exception("No such file: {0}".format(fsl_sh))
+Exception: No such file: /etc/fsl/fsl.sh
+]]></error></testcase><testcase classname="test_sienax.TestSienax" name="test_t2_weighted_input" time="0.000"><error type="medipy.base.exception.Exception" message="No such file: /etc/fsl/fsl.sh"><![CDATA[Traceback (most recent call last):
+  File "C:\tools\python2\lib\unittest\case.py", line 320, in run
+    self.setUp()
+  File "F:\medipy\plugins\fsl\tests\test_sienax.py", line 9, in setUp
+    self.sienax = medipy.fsl.Sienax()
+  File "F:\medipy\plugins\fsl\sienax.py", line 44, in __init__
+    super(Sienax, self).__init__(*args, **kwargs)
+  File "F:\medipy\plugins\fsl\fsl_tool.py", line 42, in __init__
+    self.fsl_environment = fsl_environment or utils.environment()
+  File "F:\medipy\plugins\fsl\utils.py", line 24, in environment
+    raise medipy.base.Exception("No such file: {0}".format(fsl_sh))
+Exception: No such file: /etc/fsl/fsl.sh
+]]></error></testcase><testcase classname="test_sienax.TestSienax" name="test_two_class_segmentation" time="0.000"><error type="medipy.base.exception.Exception" message="No such file: /etc/fsl/fsl.sh"><![CDATA[Traceback (most recent call last):
+  File "C:\tools\python2\lib\unittest\case.py", line 320, in run
+    self.setUp()
+  File "F:\medipy\plugins\fsl\tests\test_sienax.py", line 9, in setUp
+    self.sienax = medipy.fsl.Sienax()
+  File "F:\medipy\plugins\fsl\sienax.py", line 44, in __init__
+    super(Sienax, self).__init__(*args, **kwargs)
+  File "F:\medipy\plugins\fsl\fsl_tool.py", line 42, in __init__
+    self.fsl_environment = fsl_environment or utils.environment()
+  File "F:\medipy\plugins\fsl\utils.py", line 24, in environment
+    raise medipy.base.Exception("No such file: {0}".format(fsl_sh))
+Exception: No such file: /etc/fsl/fsl.sh
+]]></error></testcase><testcase classname="plugins.geometry.tests.test_itk_plane.TestItkPlane" name="test_distance" time="0.000"></testcase><testcase classname="plugins.geometry.tests.test_itk_plane.TestItkPlane" name="test_origin_and_normal_constructor" time="0.000"></testcase><testcase classname="plugins.geometry.tests.test_itk_plane.TestItkPlane" name="test_reflect" time="0.000"></testcase><testcase classname="plugins.geometry.tests.test_itk_plane.TestItkPlane" name="test_three_points_constructor" time="0.000"></testcase><testcase classname="plugins.intensity.tests.test_replace.TestReplace" name="test_replace_labels" time="9.985"></testcase></testsuite>
