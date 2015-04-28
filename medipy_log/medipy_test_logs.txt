@@ -55,6 +55,7 @@ add C:\Program Files\DCMTK\bin to system path;
 DUL Association Rejected
 )
 
+
 vtk:
 all pass
 
@@ -73,4 +74,82 @@ all pass
 F:\medipy\plugins\intensity\tests:
 all pass
 
-nosetests --verbosity=2 --with-xunit --xunit-file=F:\unittests_log.xml F:\medipy\lib\tests\code\ F:\medipy\plugins\diffusion\tests F:\medipy\plugins\fsl\tests F:\medipy\plugins\geometry\tests F:\medipy\plugins\intensity\tests
+nosetests --verbosity=2 F:\medipy\lib\tests\code\ F:\medipy\plugins\diffusion\tests F:\medipy\plugins\fsl\tests F:\medipy\plugins\geometry\tests F:\medipy\plugins\intensity\tests >> F:\unittests_log.txt 2>&1
+--with-xunit --xunit-file=F:\unittests_log.xml
+
+
+FutureWarning: comparison to `None` will result in an elementwise object comparison in the future.
+F:\medipy\lib\medipy\base\image.py
+	add:
+	import warnings
+	warnings.filterwarnings("ignore",category=FutureWarning)
+
+Another solution:
+change:
+    def _compute_index_to_physical_matrix(self):
+        exist = False
+        for item in [self._spacing, self._origin]:
+            if item is None:
+                exist = True
+                break
+	... ...
+
+
+
+(
+the function calls a program 'file' which doesn't exist in windows!
+)
+install file for windows(gnuwindows) solved the problem.
+
+
+WindowsError: [Error 32] The process cannot access the file because it is being used by another process: 'c:\\users\\sun\\appdata\\local\\temp\\tmppdiuou\\tensors.vtk'
+function  "medipy.io.load" for vtk, open a file *.vtk but forget to close it.
+in vtk_io.py:
+(change read from file to read from a binary string)
+    def can_load(self) :
+        with open(self.filename, 'rb') as fp:
+            Data = fp.read()
+            size = len(Data)
+
+        generic_reader = vtkDataReader()
+        generic_reader.GlobalWarningDisplayOff()
+        generic_reader.ReadFromInputStringOn()
+        generic_reader.SetBinaryInputString(Data, size)
+
+        return (generic_reader.OpenVTKFile() and 
+                generic_reader.ReadHeader() and
+                generic_reader.IsFileStructuredPoints() and
+                generic_reader.GetNumberOfTensorsInFile()>0)
+
+
+KeyError: 'itkTemplate : No template (<itkCType long double>, 3, 3) for the itk::Matrix class'
+F:\medipy\lib\medipy\itk\types.py:
+     (itk.D, get_numpy_type("double")),
+     # On Windows 32 bits, the numpy types for double and long double
+     # are the same. Add long double only if different
+
+     if get_numpy_type("double") != get_numpy_type("long double"):
+         itk_to_dtype_table.append((itk.LD, get_numpy_type("long double")))
+
+
+
+
+
+test_scu.py FAILED
+Called AE Title Not Recognized:
+in test_scu.py:
+change (local to ANY) : 
+
+class TestSCU(unittest.TestCase):
+    
+    template = """HostTable BEGIN
+remote = (REMOTE, localhost, {port})
+local = (LOCAL, localhost, 0)
+HostTable END 
+
+AETable BEGIN
+REMOTE {directory} RW (10, 1024mb) ANY
+AETable END
+"""
+
+

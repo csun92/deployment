@@ -1,8 +1,4 @@
 
-../medipy/cmake/UseCython.cmake:
-line 83 Add comment:
-#string(REGEX MATCH "[0-9.]+" CYTHON_VERSION ${CYTHON_VERSION})
-
 
 C:\ITK-4.6\lib\cmake\ITK-4.6\WrapITK\Configuration\Generators\SwigInterface\CMakeLists.txt:
 line 52 add comment:

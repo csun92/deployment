@@ -1,16 +1,7 @@
-Error	352	fatal error LNK1181: cannot open input file 'dcmdsig.lib'	_dataset_io
-	in vs2008, Additional Library Directories: C:\Program Files\DCMTK\lib
-Error	13	error C3861: 'rint': identifier not found
-add in first lines:	
-	#define _USE_MATH_DEFINES 
-
-	#include <cmath>
-(VS non standard)
-Error	10	error C3861: 'rint': identifier not found
 
 
 copy numpy include files!
-_helpers:
+**_helpers:
 add library:
 "C:\Program Files\VTK\lib\vtk-5.8\vtkCommon.lib"
 "C:\Program Files\VTK\lib\vtk-5.8\vtkFiltering.lib"
@@ -43,11 +34,12 @@ add library:
 "C:\Program Files\VTK\lib\vtk-5.8\vtkPythonCore.lib"
 "C:\Program Files\VTK\lib\vtk-5.8\vtksys.lib"
 
-MedipyHMCGccXML:
+**MedipyHMCGccXML:
+F:\medipy\plugins\hmc\HilbertCurveChainGenerator.txx
         unsigned int const nbVox=std::pow((double)cube_size, 3);
         int const nbVoxInf=std::pow((double)sub_cube_size, 3);
 
-MedipyDiffusionGccXML errors not resolved:
+**MedipyDiffusionGccXML errors not resolved:
     typedef float BValueType;
     typedef typename TInputImage::PointType DirectionType; 
     typedef vnl_matrix<float> TensorType; 
@@ -59,11 +51,13 @@ MedipyDiffusionGccXML errors not resolved:
     void SetGradientDirection(unsigned int i, DirectionType bvec);
     
     virtual unsigned int GetSamplesCount () const { return this->m_SamplesCount; };
-add:
-#undef BValue 
 
-medimax errors unsolved external sybols...
-imx_sort.c   file_3d.c
+F:\medipy\plugins\diffusion\itkBootstrapDWIStatisticsImageFilter.h
+add:
+#undef GetBValue  
+
+**medimax errors unsolved external sybols...
+in imx_sort.c
 add:
 double drand48()
 {
@@ -113,8 +107,8 @@ double rint( double x)
 }
 
 
-medipy_hmc:
-HMCInitialize.cpp: add
+**medipy_hmc:
+HMCInitializer.cpp: add
 double rint( double x)
 // Copyright (C) 2001 Tor M. Aamodt, University of Toronto
 // Permisssion to use for all purposes commercial and otherwise granted.
@@ -145,7 +139,7 @@ double rint( double x)
     }
 }
 
-EM.cpp  HMCInitialize.cpp : add
+EM.cpp  HMCInitializer.cpp : add
 #define _USE_MATH_DEFINES // for C++
 #include <cmath>
 
@@ -240,7 +234,7 @@ project property:
 "C:\Program Files\ITK\lib\itkvcl-4.6.lib"
 
 
-MeidpyIntensityPython:
+**MeidpyIntensityPython:
 itkJointHistogramCalculator.txx: add
 double rint( double x)
 // Copyright (C) 2001 Tor M. Aamodt, University of Toronto
@@ -274,15 +268,12 @@ double rint( double x)
 
 add vtk libraries.
 
-MedipySegmentationPython:
+**MedipySegmentationPython:
 itkBETImageFilter.txx: add 
 #define M_PI       3.14159265358979323846
 
-_dataset_io     _generate_dicomdir    _scu:  
-add lib path: C:\Program Files\DCMTK\lib\
-"wrap.lib" un resolved
 
-MedipyHMCPython:
+**MedipyHMCPython:
 add source files:
 EM.cpp
 HMCInitializer.cpp
@@ -294,6 +285,7 @@ error C2065: 'not' : undeclared identifier : :: change to !
 
 _dataset_io _dicomdir _scu: remove library dependancies:
 wrap.lib pthread.lib
+in vs2008, Additional Library Directories: C:\Program Files\DCMTK\lib
 
 _traitement:
 additionnal dependancies:
