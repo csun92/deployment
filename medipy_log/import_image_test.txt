@@ -1,0 +1,64 @@
+original:
+pass: 123456789 10 13 14 15 16 17 18 19 20 
+bloque: 11 12 21 22
+
+
+
+Traceback (most recent call last):
+  File "F:\medipy\apps\medipy\main_frame.py", line 615, in OnFromDirectory
+    self, recursive=True, load_all_images=True)
+  File "F:\medipy\lib\medipy\gui\io\io.py", line 139, in import_dicom_directory
+    images = reconstruction.images(worker_thread.result, parent, dtype)
+  File "F:\medipy\lib\medipy\gui\dicom\reconstruction.py", line 56, in images
+    series = medipy.io.dicom.normalize.normalize(series)
+  File "F:\medipy\lib\medipy\io\dicom\normalize.py", line 48, in normalize
+    result = normalize(dataset)
+  File "F:\medipy\lib\medipy\io\dicom\normalize.py", line 40, in normalize
+    single_frames = mosaic(dataset_or_datasets)
+  File "F:\medipy\lib\medipy\io\dicom\normalize.py", line 427, in mosaic
+    array = array.reshape(rows, columns, number_of_tiles**2)
+MemoryError
+(11 )
+
+
+
+
+
+Traceback (most recent call last):
+  File "F:\medipy\apps\medipy\main_frame.py", line 615, in OnFromDirectory
+    self, recursive=True, load_all_images=True)
+  File "F:\medipy\lib\medipy\gui\io\io.py", line 134, in import_dicom_directory
+    worker_thread.start()
+  File "C:\tools\python2\lib\threading.py", line 745, in start
+    _start_new_thread(self.__bootstrap, ())
+thread.error: can't start new thread
+(12 )
+
+
+
+
+
+E: DcmElement: PixelData (7fe0,0010) larger (73728) than remaining bytes (54800)
+ in file, premature end of stream
+ERROR:root:Traceback (most recent call last):
+  File "F:\medipy\lib\medipy\gui\periodic_progress_dialog.py", line 68, in run
+    self._result = self._target(*self._args, **self._kwargs)
+  File "F:\medipy\lib\medipy\io\dicom\misc.py", line 119, in load_dicomdir_recor
+ds
+    result.append(dataset_io.read(filename))
+  File "F:\medipy\lib\medipy\io\dicom\dataset_io\dataset_io.py", line 116, in re
+ad
+    raise medipy.base.Exception(e)
+Exception: Could not read from stream
+(21 22)
+
+22: 'F:\\001BJ\\Original\\20130614\\dicom\\CD68177C\\445D4226\\F47D854E\\BA124139'
+
+
+final:
+    "No ImageIO can {} file {}".format(mode, self._filename))
+Exception: No ImageIO can Read file F:\001BJ\Final\20130614\qsm_to_t1_3d.trf
+
+
+F:\001BJ\Final\20130614\t1_3d_to_mini.nii.gz
+Exception: No Reader for (float,5)
