@@ -205,6 +205,23 @@ def install(binary_dir, install_dir):
         fs.truncate(0)
         fs.write(after)
 
+    # Patch files that force downloading external projects
+    for generator, entry in [("SwigInterface", "SWIG"), ("GccXML", "GCCXML")]:        
+        filename = os.path.join(install_dir, "lib", "cmake", "ITK-4.6", 
+            "WrapITK", "Configuration", "Generators", generator, 
+            "CMakeLists.txt")
+        pattern = re.compile(r'option\(ITK_USE_SYSTEM_{} .* OFF\)'.format(entry))
+        with open(filename,"r+") as fs:
+            before = fs.read()
+            result = re.findall(pattern, before)
+            for each in result:
+                repl = each.replace("OFF)","ON)")
+                after = re.sub(pattern, repl, before)
+                fs.seek(0)
+                fs.truncate(0)
+                fs.write(after)
+            
+
     # Fix PYTHONPATH for pygccxml
     with open(os.path.join(install_dir, "tools/python2/Lib/site-packages/WrapITK.pth"), "a") as fd:
         p = os.path.join(install_dir,"lib/cmake/ITK-4.6/WrapITK/Configuration/Generators/SwigInterface/src")

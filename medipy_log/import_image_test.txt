@@ -19,7 +19,8 @@ Traceback (most recent call last):
     array = array.reshape(rows, columns, number_of_tiles**2)
 MemoryError
 (11 )
-
+ASL BOLD LETTRES ISO 4mm 28COUPES_TE=21ms
+15682422
 
 
 
@@ -33,8 +34,8 @@ Traceback (most recent call last):
     _start_new_thread(self.__bootstrap, ())
 thread.error: can't start new thread
 (12 )
-
-
+MocoSeries
+A9D02130
 
 
 
@@ -51,6 +52,9 @@ ad
     raise medipy.base.Exception(e)
 Exception: Could not read from stream
 (21 22)
+QSM fl. comp.
+F0AE1A02
+F47D854E
 
 22: 'F:\\001BJ\\Original\\20130614\\dicom\\CD68177C\\445D4226\\F47D854E\\BA124139'
 

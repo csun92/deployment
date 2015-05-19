@@ -1,0 +1,55 @@
+!include "LogicLib.nsh"
+!include "EnvVarUpdate.nsh"
+
+Var PYTHONPATH
+Function getPythonPath
+  ReadRegStr $PYTHONPATH HKLM Software\Python\PythonCore\2.7\InstallPath ""
+  ${If} $PYTHONPATH == ""
+    ReadRegStr $PYTHONPATH HKLM Software\Python\PythonCore\2.6\InstallPath ""
+  ${EndIf}
+FunctionEnd
+
+
+Function .onInit
+  call getPythonPath
+  ${If} $PYTHONPATH == ""
+    MessageBox MB_OK "Could not install Medipy. No supported python is installed(python 2.7)"
+    Abort
+  ${EndIf}
+FunctionEnd
+
+Function setSystemPath
+  ${EnvVarUpdate} $0 "PATH" "A" "HKLM"  "$PROGRAMFILES\ITK\bin"
+  ${EnvVarUpdate} $0 "PATH" "A" "HKLM"  "$PROGRAMFILES\VTK\bin"
+  ${EnvVarUpdate} $0 "PATH" "A" "HKLM"  "$PROGRAMFILES\DCMTK\bin"
+  ${EnvVarUpdate} $0 "PATH" "A" "HKLM"  "$PROGRAMFILES\GDCM\bin"
+  ${EnvVarUpdate} $0 "MEDIPY_HOME" "P" "HKLM"  "$INSTDIR\"
+  ${EnvVarUpdate} $0 "MEDIPY_PLUGINS_PATH" "P" "HKLM"  "$INSTDIR\plugins\"
+  ${EnvVarUpdate} $0 "PYTHONPATH" "A" "HKLM"  "$INSTDIR\lib\;$INSTDIR\lib\Release"
+FunctionEnd
+
+Function .onInstSuccess
+  call setSystemPath
+FunctionEnd
+
+
+"$PYTHONPATH\Lib\site-packages"
+
+C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\ProgramData\chocolatey\bin;C:\tools\python2;C:\Program Files\Git\cmd;C:\Program Files\ITK\bin;C:\MinGW\bin;C:\tools\python2\Scripts;C:\Program Files\Mercurial;C:\Program Files\doxygen\bin;C:\Program Files\gccxml\bin;C:\Program Files\VTK\bin;C:\Program Files\Microsoft Visual Studio 9.0\Common7\IDE;C:\Program Files\Microsoft Visual Studio 9.0\VC\bin;C:\Program Files\DCMTK\bin;C:\Program Files\GnuWin32\bin
+
+In short: 
+setx /M PATH "%PATH%;<your-new-path>"
+
+
+*Running cmd as administrator.
+
+The /M option sets the variable at SYSTEM scope. The default behaviour is to set it for the USER.
+
+The truncation issue happens because when you echo %PATH% it will show the concatenation of SYSTEM and USER values. So when you add it in your second argument to setx, it will be fitting SYSTEM and USER values inside the USER var. When you echo again, things will be doubled.
+
+Additionally, the /M option requires administrator privilege, so you need to open your terminal with "run as administrator", otherwise setx will complain with "access to registry path is denied".
+
+Last thing to note: You won't see the new value when you echo %PATH% just after setting it this way, you need to close cmd and open again.
+
+If you want to check the actual values stored in registry check the answer here.
+

@@ -1,3 +1,6 @@
+for windows x64:
+copy vcomp90.dll(amd64) to ../system32/
+
 Add system path:
 MEDIPY_HOME: F:\medipy
 MEDIPY_PLUGINS_PATH: F:\medipy\plugins\

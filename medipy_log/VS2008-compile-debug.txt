@@ -56,7 +56,8 @@ F:\medipy\plugins\diffusion\itkBootstrapDWIStatisticsImageFilter.h
 add:
 #undef GetBValue  
 
-**medimax errors unsolved external sybols...
+**medimax: 
+errors unsolved external sybols...
 in imx_sort.c
 add:
 double drand48()
@@ -278,16 +279,16 @@ add source files:
 EM.cpp
 HMCInitializer.cpp
 
-MedipyDiffusionPython:
+**MedipyDiffusionPython:
 itkStreamlineTractographyAlgorithm.txx
 error C2065: 'M_PI' : undeclared identifier
 error C2065: 'not' : undeclared identifier : :: change to !
 
-_dataset_io _dicomdir _scu: remove library dependancies:
+**_dataset_io _dicomdir _scu: remove library dependancies:
 wrap.lib pthread.lib
 in vs2008, Additional Library Directories: C:\Program Files\DCMTK\lib
 
-_traitement:
+**_traitement:
 additionnal dependancies:
 trai_3d.obj
 imx_matrix.obj
