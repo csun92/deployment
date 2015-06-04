@@ -2,7 +2,7 @@ import os
 import shutil
 
 source = "F:/medipy"
-dest = "F:/medipy_install"
+dest = "F:/medipy_install/medipy"
 
 #copy test files
 tests_dir = dest + '/lib/tests'
