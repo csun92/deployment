@@ -337,3 +337,39 @@ hessien_distance_topo.obj
 
 Additioanl Library Direcotries:
 F:\medipy\plugins\medimax\medimax.dir\Release\
+
+target_link_libraries(MediPyHMCPython ${objs_dir}/EM.obj ${objs_dir}/HMCInitializer.obj)
+
+set(VTK_ALL_LIBRARIES
+        vtkCommon
+        vtkFiltering
+        vtkImaging
+        vtkGraphics
+        vtkGenericFiltering
+        vtkIO
+        vtkRendering
+        vtkVolumeRendering
+        vtkHybrid
+        vtkWidgets
+        vtkInfovis
+        vtkGeovis
+        vtkViews
+        vtkCharts
+        vtkCommonPythonD
+        vtkFilteringPythonD
+        vtkImagingPythonD
+        vtkGraphicsPythonD
+        vtkGenericFilteringPythonD
+        vtkIOPythonD
+        vtkRenderingPythonD
+        vtkVolumeRenderingPythonD
+        vtkHybridPythonD
+        vtkWidgetsPythonD
+        vtkInfovisPythonD
+        vtkGeovisPythonD
+        vtkViewsPythonD
+        vtkChartsPythonD
+        vtkPythonCore
+        vtksys
+    )
+    link_directories(${VTK_DIR}/lib)
