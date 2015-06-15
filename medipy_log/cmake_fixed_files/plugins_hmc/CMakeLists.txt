@@ -22,4 +22,5 @@ add_dependencies(${lib} medipy_hmc)
 
 if(${CMAKE_SYSTEM_NAME} MATCHES "Windows")
 	set(objs_dir "./medipy_hmc.dir/Release")
+	target_link_libraries(MediPyHMCPython ${objs_dir}/EM.obj ${objs_dir}/HMCInitializer.obj)
 endif()

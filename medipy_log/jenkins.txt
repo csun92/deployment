@@ -1,0 +1,29 @@
+Attention!! If jenkins cannot run windows batch commands correctly, the reason may reffer to:
+Jenkins runs as service, so it has a different varaible environment with the current user.
+The solution is to let the jenkins service log on by current user(the same with whom to run
+the cmd.)
+http://stackoverflow.com/questions/10952280/execute-windows-batch-command-from-jenkins-fails-but-runs-fine-in-cmd-exe
+
+
+
+set WrapITK_DIR="C:\Program Files\ITK\lib\cmake\ITK-4.6\WrapITK"
+set Gene="-GVisual Studio 9 2008 Win64"
+python "cmake_patch_files.py"
+python "medipy_patch_files.py"
+cmake . -DWrapITK_DIR=%WrapITK_DIR% -DOpenMP_CXX_FLAGS="" -DOpenMP_C_FLAGS="" %Gene%
+vcbuild MediPy.sln "Release|X64"
+
+
+
+export PYTHONPATH=${WORKSPACE}/lib
+export MEDIPY_PLUGINS_PATH=${WORKSPACE}/plugins/
+nosetests -P --with-xunit lib/tests/ plugins/*/tests || true
+
+
+nosetests --verbosity=2 F:\medipy\lib\tests\code\ F:\medipy\plugins\diffusion\tests F:\medipy\plugins\fsl\tests F:\medipy\plugins\geometry\tests F:\medipy\plugins\intensity\tests >> F:\unittests_log.txt 2>&1
+
+
+set WORKSPACE=F:\medipy_workspace
+set PYTHONPATH=%WORKSPACE%\lib;%WORKSPACE%\lib\Release
+set MEDIPY_PLUGINS_PATH=%WORKSPACE%\plugins
+nosetests --verbosity=2 .\lib\tests\code\ .\plugins\diffusion\tests .\plugins\fsl\tests .\plugins\geometry\tests .\plugins\intensity\tests >> unittests_log.txt 2>&1
