@@ -1,7 +1,7 @@
 import os
 import shutil
 
-medipy_path = "F:/medipy_workspace/"
+medipy_path = "F:/medipy-sun/"
 src = "E:/deployment/medipy_log/medipy_changed_files/"
 
 filelist = {}

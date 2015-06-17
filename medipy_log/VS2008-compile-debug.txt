@@ -373,3 +373,14 @@ set(VTK_ALL_LIBRARIES
         vtksys
     )
     link_directories(${VTK_DIR}/lib)
+
+
+
+if(NOT ${CMAKE_SYSTEM_NAME} MATCHES "Windows")
+	swig_link_libraries(dataset_io 
+	    dcmdsig ${DCMTK_LIBRARIES} gdcmMSFF wrap pthread)
+else()
+	set(DICOM_LIBS_DIR "${DCMTK_DIR}/lib")
+	swig_link_libraries(dataset_io 
+	    ${DICOM_LIBS_DIR}/dcmdsig.lib ${DCMTK_LIBRARIES} ${DICOM_LIBS_DIR}/oflog.lib gdcmMSFF)
+endif()

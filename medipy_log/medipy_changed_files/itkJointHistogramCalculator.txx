@@ -20,6 +20,7 @@
 #include <itkImageRegionConstIteratorWithIndex.h>
 #include <itkVector.h>
 
+#ifdef _WINDOWS
 double rint( double x)
 // Copyright (C) 2001 Tor M. Aamodt, University of Toronto
 // Permisssion to use for all purposes commercial and otherwise granted.
@@ -49,6 +50,7 @@ double rint( double x)
         return (double)(xint);
     }
 }
+#endif
 
 namespace itk
 {

@@ -5,7 +5,7 @@
  * http://www.cecill.info/licences/Licence_CeCILL-B_V1-en.html
  * for details.
  ************************************************************************/
-#define _USE_MATH_DEFINES // for C++
+#define _USE_MATH_DEFINES // for Windows
 #include <cmath>
  
 #include "HMCInitializer.h"
@@ -17,6 +17,7 @@
 #include <vnl/vnl_matrix.h>
 #include <vnl/vnl_vector.h>
 
+#ifdef _WINDOWS
 double rint( double x)
 // Copyright (C) 2001 Tor M. Aamodt, University of Toronto
 // Permisssion to use for all purposes commercial and otherwise granted.
@@ -46,6 +47,7 @@ double rint( double x)
         return (double)(xint);
     }
 }
+#endif
 
 HMCInitializer
 ::HMCInitializer()

@@ -6,11 +6,14 @@ http://stackoverflow.com/questions/10952280/execute-windows-batch-command-from-j
 
 
 
-set WrapITK_DIR="C:\Program Files\ITK\lib\cmake\ITK-4.6\WrapITK"
+set WRAPITK="-DWrapITK_DIR=C:\Program Files\ITK\lib\cmake\ITK-4.6\WrapITK"
+set oflib="-Doflog=C:\Program Files\DCMTK\lib\oflog.lib"
+set OFLOG="-DOFLOG=C:\Program Files\DCMTK\include\dcmtk\oflog"
+set dcmdsig="-DDCMTK_dcmsign_LIBRARY=C:\Program Files\DCMTK\lib\dcmdsig.lib"
 set Gene="-GVisual Studio 9 2008 Win64"
 python "cmake_patch_files.py"
 python "medipy_patch_files.py"
-cmake . -DWrapITK_DIR=%WrapITK_DIR% -DOpenMP_CXX_FLAGS="" -DOpenMP_C_FLAGS="" %Gene%
+cmake . %WRAPITK% %oflib% %OFLOG% %dcmdsig% -DOpenMP_CXX_FLAGS="" -DOpenMP_C_FLAGS="" %Gene%
 vcbuild MediPy.sln "Release|X64"
 
 

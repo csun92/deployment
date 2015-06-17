@@ -1,7 +1,7 @@
 import os
 import shutil
 
-medipy_path = "F:/medipy_workspace/"
+medipy_path = "F:/medipy-sun/"
 src = "E:/deployment/medipy_log/cmake_fixed_files/"
 
 filelist = {}
@@ -12,7 +12,9 @@ filelist.update({
     "medimax_traitement": "plugins/medimax/traitement",
     "plugins_hmc": "plugins/hmc",
     "plugins_intensity": "plugins/intensity",
-    "plugins_medimax": "plugins/medimax"
+    "plugins_medimax": "plugins/medimax",
+    "io_dicom": "lib/medipy/io/dicom",
+    "network_dicom_scu": "lib/medipy/network/dicom/scu"
     })
 
 for name, path in filelist.items():

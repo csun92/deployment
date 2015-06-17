@@ -5,7 +5,7 @@
  * http://www.cecill.info/licences/Licence_CeCILL-B_V1-en.html
  * for details.
  ************************************************************************/
-#define _USE_MATH_DEFINES // for C++
+#define _USE_MATH_DEFINES // for Windows
 #include <cmath>
 
 #include "EM.h"
@@ -19,10 +19,12 @@
 #include <vnl/algo/vnl_determinant.h>
 #include <vnl/algo/vnl_qr.h>
 
+#ifdef _WINDOWS
 static inline double round(double val)
 {    
     return floor(val + 0.5);
 }
+#endif
 
 EM
 ::EM(vnl_vector<double> const & PIi,

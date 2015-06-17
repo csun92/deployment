@@ -25,9 +25,8 @@ if(NOT ${CMAKE_SYSTEM_NAME} MATCHES "Windows")
 	swig_link_libraries(dataset_io 
 	    dcmdsig ${DCMTK_LIBRARIES} gdcmMSFF wrap pthread)
 else()
-	set(DICOM_LIBS_DIR "${DCMTK_DIR}/lib")
 	swig_link_libraries(dataset_io 
-	    ${DICOM_LIBS_DIR}/dcmdsig.lib ${DCMTK_LIBRARIES} ${DICOM_LIBS_DIR}/oflog.lib gdcmMSFF)
+	    ${DCMTK_LIBRARIES}  gdcmMSFF ${DCMTK_DIR}/lib/oflog.lib)
 endif()
 
 install_swig_python_module(dataset_io)

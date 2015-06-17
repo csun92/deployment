@@ -1,4 +1,4 @@
-if(NOT ${CMAKE_SYSTEM_NAME} MATCHES "Windows")
+if(NOT ${CMAKE_SYSTEM_NAME} MATCHES "Windows")   
     file(GLOB python_files "*.py")
     install_py_files(${python_files})
 

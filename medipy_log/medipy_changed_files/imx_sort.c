@@ -34,6 +34,7 @@
 #define 	M		7
 #define  	NSTACK		50
 
+#ifdef _WINDOWS
 double drand48()
 {
   return ((double)(random()))/(1.+(double)(RAND_MAX));
@@ -80,7 +81,7 @@ int random()
 
   return rand();
 }
-
+#endif
 
 /***********************************************************************************
 ***
