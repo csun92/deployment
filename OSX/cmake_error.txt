@@ -1,0 +1,30 @@
+CMake Error at cmake/UseCython.cmake:83 (string):
+  string sub-command REGEX, mode MATCH needs at least 5 arguments total to
+  command.
+Call Stack (most recent call first):
+  cmake/cython.cmake:3 (include)
+  cmake/medipy.cmake:3 (include)
+  CMakeLists.txt:8 (include)
+
+
+CMake Error at cmake/UseCython.cmake:83 (string):
+  string sub-command REGEX, mode MATCH needs at least 5 arguments total to
+  command.
+Call Stack (most recent call first):
+  plugins/diffusion/CMakeLists.txt:16 (include)
+
+
+CMake Error at cmake/UseCython.cmake:199 (if):
+  if given arguments:
+
+    "VERSION_GREATER" "0.14" "OR" "VERSION_EQUAL" "0.14"
+
+  Unknown arguments specified
+Call Stack (most recent call first):
+  cmake/UseCython.cmake:251 (compile_pyx)
+  cmake/cython.cmake:6 (cython_add_module)
+  plugins/diffusion/CMakeLists.txt:17 (medipy_cython_add_module)
+
+AssembleTilesImageFilter: Creating itkAssembleTilesImageFilter submodule.
+CMake Error at lib/medipy/io/dicom/CMakeLists.txt:58 (itk_end_wrap_submodule):
+  Unknown CMake command "itk_end_wrap_submodule".

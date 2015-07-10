@@ -26,7 +26,8 @@ if(NOT ${CMAKE_SYSTEM_NAME} MATCHES "Windows")
 	    dcmdsig ${DCMTK_LIBRARIES} gdcmMSFF wrap pthread)
 else()
 	swig_link_libraries(dataset_io 
-	    ${DCMTK_LIBRARIES}  gdcmMSFF ${DCMTK_DIR}/lib/oflog.lib)
+	    ${DCMTK_LIBRARIES}  gdcmMSFF ${DCMTK_DIR}/lib/oflog.lib ${CMAKE_SOURCE_DIR}/lib/medipy/base/_exception.dir/Release/Exception.obj 
+        ${CMAKE_SOURCE_DIR}/lib/medipy/base/_exception.dir/Release/ExceptionPYTHON_wrap.obj)
 endif()
 
 install_swig_python_module(dataset_io)

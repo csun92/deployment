@@ -36,7 +36,8 @@ if(NOT ${OFLOG} STREQUAL "OFLOG-NOTFOUND")
         install_swig_python_module(scu)
     else()
         swig_link_libraries(scu
-            ${DCMTK_LIBRARIES} ${DCMTK_DIR}/lib/oflog.lib)
+            ${DCMTK_LIBRARIES} ${DCMTK_DIR}/lib/oflog.lib ${CMAKE_SOURCE_DIR}/lib/medipy/base/_exception.dir/Release/Exception.obj 
+            ${CMAKE_SOURCE_DIR}/lib/medipy/base/_exception.dir/Release/ExceptionPYTHON_wrap.obj)
         install_swig_python_module(scu)
     endif()
 endif()

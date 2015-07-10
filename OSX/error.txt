@@ -1,0 +1,51 @@
+[ 14%] Generating vcl_complex.xml
+In file included from /usr/include/wchar.h:90,
+                 from /usr/local/Cellar/gcc45/4.5.4/lib/gcc/x86_64-apple-darwin14.1.0/4.5.4/include/c++/cwchar:47,
+                 from /usr/local/Cellar/gcc45/4.5.4/lib/gcc/x86_64-apple-darwin14.1.0/4.5.4/include/c++/bits/postypes.h:42,
+                 from /usr/local/Cellar/gcc45/4.5.4/lib/gcc/x86_64-apple-darwin14.1.0/4.5.4/include/c++/bits/char_traits.h:42,
+                 from /usr/local/Cellar/gcc45/4.5.4/lib/gcc/x86_64-apple-darwin14.1.0/4.5.4/include/c++/string:42,
+                 from /Users/yosemiteretail/workspace/itk-4.6.1/InsightToolkit-4.6.1/Modules/Core/Common/include/itkMacro.h:47,
+                 from /Users/yosemiteretail/workspace/itk-4.6.1/InsightToolkit-4.6.1/Modules/Core/Common/include/itkLightObject.h:21,
+                 from /Users/yosemiteretail/workspace/itk-4.6.1/InsightToolkit-4.6.1/Modules/Core/Common/include/itkObject.h:31,
+                 from /Users/yosemiteretail/workspace/itk-4.6.1/InsightToolkit-4.6.1/Modules/Core/Common/include/itkCommand.h:21,
+                 from /Users/yosemiteretail/workspace/itk-4.6.1/build-make/Wrapping/Modules/ITKCommon/vcl_complex.cxx:1:
+/usr/include/stdio.h:276: error: wrong number of arguments specified for 'deprecated' attribute
+/usr/include/stdio.h:391: error: wrong number of arguments specified for 'deprecated' attribute
+In file included from /Users/yosemiteretail/workspace/itk-4.6.1/InsightToolkit-4.6.1/Modules/Core/Common/include/itkMath.h:32,
+                 from /Users/yosemiteretail/workspace/itk-4.6.1/InsightToolkit-4.6.1/Modules/Core/Common/include/itkIndex.h:23,
+                 from /Users/yosemiteretail/workspace/itk-4.6.1/InsightToolkit-4.6.1/Modules/Core/Common/include/itkContinuousIndex.h:22,
+                 from /Users/yosemiteretail/workspace/itk-4.6.1/build-make/Wrapping/Modules/ITKCommon/vcl_complex.cxx:5:
+/Users/yosemiteretail/workspace/itk-4.6.1/InsightToolkit-4.6.1/Modules/Core/Common/include/itkMathDetail.h: In function 'itk::int32_t itk::Math::Detail::RoundHalfIntegerToEven_32(double)':
+/Users/yosemiteretail/workspace/itk-4.6.1/InsightToolkit-4.6.1/Modules/Core/Common/include/itkMathDetail.h:177: error: '_mm_set_sd' was not declared in this scope
+/Users/yosemiteretail/workspace/itk-4.6.1/InsightToolkit-4.6.1/Modules/Core/Common/include/itkMathDetail.h:177: error: '_mm_cvtsd_si32' was not declared in this scope
+/Users/yosemiteretail/workspace/itk-4.6.1/InsightToolkit-4.6.1/Modules/Core/Common/include/itkMathDetail.h: In function 'itk::int32_t itk::Math::Detail::RoundHalfIntegerToEven_32(float)':
+/Users/yosemiteretail/workspace/itk-4.6.1/InsightToolkit-4.6.1/Modules/Core/Common/include/itkMathDetail.h:185: error: '_mm_set_ss' was not declared in this scope
+/Users/yosemiteretail/workspace/itk-4.6.1/InsightToolkit-4.6.1/Modules/Core/Common/include/itkMathDetail.h:185: error: '_mm_cvtss_si32' was not declared in this scope
+/Users/yosemiteretail/workspace/itk-4.6.1/InsightToolkit-4.6.1/Modules/Core/Common/include/itkMathDetail.h: In function 'itk::int64_t itk::Math::Detail::RoundHalfIntegerToEven_64(double)':
+/Users/yosemiteretail/workspace/itk-4.6.1/InsightToolkit-4.6.1/Modules/Core/Common/include/itkMathDetail.h:281: error: '_mm_set_sd' was not declared in this scope
+/Users/yosemiteretail/workspace/itk-4.6.1/InsightToolkit-4.6.1/Modules/Core/Common/include/itkMathDetail.h:281: error: '_mm_cvtsd_si64' was not declared in this scope
+/Users/yosemiteretail/workspace/itk-4.6.1/InsightToolkit-4.6.1/Modules/Core/Common/include/itkMathDetail.h: In function 'itk::int64_t itk::Math::Detail::RoundHalfIntegerToEven_64(float)':
+/Users/yosemiteretail/workspace/itk-4.6.1/InsightToolkit-4.6.1/Modules/Core/Common/include/itkMathDetail.h:289: error: '_mm_set_ss' was not declared in this scope
+/Users/yosemiteretail/workspace/itk-4.6.1/InsightToolkit-4.6.1/Modules/Core/Common/include/itkMathDetail.h:289: error: '_mm_cvtss_si64' was not declared in this scope
+make[2]: *** [Wrapping/Modules/ITKCommon/vcl_complex.xml] Error 1
+make[1]: *** [Wrapping/Modules/ITKCommon/CMakeFiles/ITKCommonGccXML.dir/all] Error 2
+make: *** [all] Error 2
+
+
+
+
+
+
+Linking CXX shared library ../../../../lib/libITKIOGDCM-4.6.dylib
+Undefined symbols for architecture x86_64:
+  "gdcm::SerieHelper::SetDirectory(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool)", referenced from:
+      itk::GDCMSeriesFileNames::SetInputDirectory(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) in itkGDCMSeriesFileNames.cxx.o
+  "gdcm::SerieHelper::OrderFileList(std::vector<gdcm::SmartPointer<gdcm::FileWithName>, std::allocator<gdcm::SmartPointer<gdcm::FileWithName> > >*)", referenced from:
+      itk::GDCMSeriesFileNames::GetFileNames(std::basic_string<char, std::char_traits<char>, std::allocator<char> >) in itkGDCMSeriesFileNames.cxx.o
+  "gdcm::PixelFormat::Print(std::basic_ostream<char, std::char_traits<char> >&) const", referenced from:
+      itk::GDCMImageIO::InternalReadImageInformation()      in itkGDCMImageIO.cxx.o
+ld: symbol(s) not found for architecture x86_64
+collect2: ld returned 1 exit status
+make[2]: *** [lib/libITKIOGDCM-4.6.1.dylib] Error 1
+make[1]: *** [Modules/IO/GDCM/src/CMakeFiles/ITKIOGDCM.dir/all] Error 2
+make: *** [all] Error 2
