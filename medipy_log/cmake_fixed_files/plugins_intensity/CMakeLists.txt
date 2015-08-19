@@ -30,38 +30,6 @@ itk_wrap_module("MediPyIntensity")
     
 itk_end_wrap_module()
 
-if(${CMAKE_SYSTEM_NAME} MATCHES "Windows")
-    set(VTK_LIBS_ELSE
-            vtkCommon
-            vtkFiltering
-            vtkImaging
-            vtkGraphics
-            vtkGenericFiltering
-            vtkIO
-            vtkRendering
-            vtkVolumeRendering
-            vtkHybrid
-            vtkWidgets
-            vtkInfovis
-            vtkGeovis
-            vtkViews
-            vtkCharts
-            vtkCommonPythonD
-            vtkFilteringPythonD
-            vtkImagingPythonD
-            vtkGraphicsPythonD
-            vtkGenericFilteringPythonD
-            vtkIOPythonD
-            vtkRenderingPythonD
-            vtkVolumeRenderingPythonD
-            vtkHybridPythonD
-            vtkWidgetsPythonD
-            vtkInfovisPythonD
-            vtkGeovisPythonD
-            vtkViewsPythonD
-            vtkChartsPythonD
-            vtkPythonCore
-            vtksys
-        )
-    target_link_libraries(MediPyIntensityPython ${VTK_LIBS_ELSE})
+if(NOT ${CMAKE_SYSTEM_NAME} MATCHES "Linux")
+    target_link_libraries(MediPyIntensityPython ${VTK_LIBRARIES} vtkPythonCore)
 endif()

@@ -1,8 +1,8 @@
 import os
 import shutil
 
-medipy_path = "F:/medipy/"
-src = "E:/deployment/medipy_log/cmake_fixed_files/"
+medipy_path = "/Users/sun/workspace/medipy_changed/"
+src = "./cmake_fixed_files/"
 
 filelist = {}
 filename = "CMakeLists.txt"

@@ -28,15 +28,17 @@ if(NOT ${oflog} STREQUAL "oflog-NOTFOUND")
 endif()
 
 if(NOT ${OFLOG} STREQUAL "OFLOG-NOTFOUND")
-    if(NOT ${CMAKE_SYSTEM_NAME} MATCHES "Windows")
-        swig_link_libraries(generate_dicomdir 
-            dcmdsig ${DCMTK_LIBRARIES} gdcmMSFF wrap pthread)
-        install_swig_python_module(generate_dicomdir)
-    else()
+    if(${CMAKE_SYSTEM_NAME} MATCHES "Windows")
         swig_link_libraries(generate_dicomdir 
             ${DCMTK_LIBRARIES} gdcmMSFF ${DCMTK_DIR}/lib/oflog.lib)
-        install_swig_python_module(generate_dicomdir)
+    elseif(${CMAKE_SYSTEM_NAME} MATCHES "Darwin")
+        swig_link_libraries(generate_dicomdir 
+            dcmdsig ${DCMTK_LIBRARIES} gdcmMSFF z pthread)
+    else()
+        swig_link_libraries(generate_dicomdir 
+            dcmdsig ${DCMTK_LIBRARIES} gdcmMSFF wrap pthread)
     endif()
+    install_swig_python_module(generate_dicomdir)
 endif()
 
 itk_wrap_module("AssembleTilesImageFilter")

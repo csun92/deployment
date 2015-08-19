@@ -1,8 +1,8 @@
 import os
 import shutil
 
-medipy_path = "F:/medipy/"
-src = "E:/deployment/medipy_log/medipy_changed_files/"
+medipy_path = "/Users/sun/workspace/medipy_changed/"
+src = "./medipy_changed_files/"
 
 filelist = {}
 filelist.update({
@@ -26,7 +26,14 @@ filelist.update({
     "test_encapsulated_document.py": "lib/tests/code/io/dicom",
     "test_scu.py": "lib/tests/code/network/dicom",
     "types.py": "lib/medipy/itk",
-    "vtk_io.py": "plugins/diffusion"
+    "vtk_io.py": "plugins/diffusion",
+    "scuexcept.h": "lib/medipy/network/dicom/scu",
+    "imx_misc.c": "plugins/medimax/outils",
+    "differential_bias_correction.c": "plugins/medimax/traitement",
+    "detection.i": "plugins/medimax/detection",
+    "recalage.i": "plugins/medimax/recalage",
+    "medipy_app.py": "apps/medipy",
+    "__init__.py": "lib/medipy"
     })
 
 for name, path in filelist.items():

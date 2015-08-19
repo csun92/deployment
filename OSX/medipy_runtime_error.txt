@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "/Users/sun/workspace/medipy/lib/medipy/gui/control/float_interval.py", line 156, in OnPaint
+    self._draw(dc)
+  File "/Users/sun/workspace/medipy/lib/medipy/gui/control/float_interval.py", line 262, in _draw
+    line_brush = wx.Brush(wx.Color(0,0,0))
+AttributeError: 'module' object has no attribute 'Color'
+
+comparison to `None` will result in an elementwise object comparison in the future.
+comparison to `None` will result in an elementwise object comparison in the future.
+comparison to `None` will result in an elementwise object comparison in the future.
+comparison to `None` will result in an elementwise object comparison in the future.
+
+Traceback (most recent call last):
+  File "/Users/sun/workspace/medipy/lib/medipy/gui/wxVTKRenderWindowInteractor.py", line 528, in OnPaint
+    self._Iren.GetRenderWindow().SetSize(self.GetSizeTuple())
+TypeError: SetSize() takes exactly 2 arguments (1 given)

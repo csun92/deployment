@@ -15,19 +15,21 @@ if("${DCMTK_LIBRARIES}" STREQUAL "")
     set(DCMTK_LIBRARIES dcmdata dcmimage dcmimgle dcmjpeg dcmnet dcmpstat 
         dcmqrdb dcmsr dcmtls ijg12 ijg16 ijg8 ofstd)
 endif()
-
 find_library(oflog oflog)
 if(NOT ${oflog} STREQUAL "oflog-NOTFOUND")
     set(DCMTK_LIBRARIES ${DCMTK_LIBRARIES} oflog)
 endif()
 
-if(NOT ${CMAKE_SYSTEM_NAME} MATCHES "Windows")
-	swig_link_libraries(dataset_io 
-	    dcmdsig ${DCMTK_LIBRARIES} gdcmMSFF wrap pthread)
-else()
+if(${CMAKE_SYSTEM_NAME} MATCHES "Windows")
 	swig_link_libraries(dataset_io 
 	    ${DCMTK_LIBRARIES}  gdcmMSFF ${DCMTK_DIR}/lib/oflog.lib ${CMAKE_SOURCE_DIR}/lib/medipy/base/_exception.dir/Release/Exception.obj 
         ${CMAKE_SOURCE_DIR}/lib/medipy/base/_exception.dir/Release/ExceptionPYTHON_wrap.obj)
+elseif(${CMAKE_SYSTEM_NAME} MATCHES "Darwin")
+	swig_link_libraries(dataset_io 
+	    dcmdsig ${DCMTK_LIBRARIES} gdcmMSFF z pthread)
+else()
+	swig_link_libraries(dataset_io 
+	    dcmdsig ${DCMTK_LIBRARIES} gdcmMSFF wrap pthread)
 endif()
 
 install_swig_python_module(dataset_io)

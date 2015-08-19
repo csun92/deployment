@@ -18,9 +18,12 @@ itk_wrap_module("MediPyHMC")
 
 itk_end_wrap_module()
 
-add_dependencies(${lib} medipy_hmc)
-
 if(${CMAKE_SYSTEM_NAME} MATCHES "Windows")
 	set(objs_dir "./medipy_hmc.dir/Release")
 	set_target_properties(MediPyHMCPython PROPERTIES LINK_FLAGS_RELEASE "${objs_dir}/EM.obj ${objs_dir}/HMCInitializer.obj")
+elseif(${CMAKE_SYSTEM_NAME} MATCHES "Darwin")
+	target_link_libraries(${lib} medipy_hmc)
+else()
+	add_dependencies(${lib} medipy_hmc)
 endif()
+    
