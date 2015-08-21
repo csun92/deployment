@@ -1,7 +1,7 @@
 import os
 import shutil
 
-medipy_path = "/Users/sun/workspace/medipy_changed/"
+medipy_path = "/Users/sun/workspace/medipy/"
 src = "./cmake_fixed_files/"
 
 filelist = {}
@@ -14,7 +14,8 @@ filelist.update({
     "plugins_intensity": "plugins/intensity",
     "plugins_medimax": "plugins/medimax",
     "io_dicom": "lib/medipy/io/dicom",
-    "network_dicom_scu": "lib/medipy/network/dicom/scu"
+    "network_dicom_scu": "lib/medipy/network/dicom/scu",
+    ".": ""
     })
 
 for name, path in filelist.items():
@@ -24,3 +25,5 @@ for name, path in filelist.items():
     if not os.path.exists(path):
         os.makedirs(path)
     shutil.copy(os.path.join(src, name, filename), path)
+
+shutil.copy(os.path.join(src, "UseCython.cmake"), os.path.join(medipy_path, "cmake"))

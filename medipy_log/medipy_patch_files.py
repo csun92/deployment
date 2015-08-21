@@ -1,7 +1,7 @@
 import os
 import shutil
 
-medipy_path = "/Users/sun/workspace/medipy_changed/"
+medipy_path = "/Users/sun/workspace/medipy/"
 src = "./medipy_changed_files/"
 
 filelist = {}
@@ -33,7 +33,8 @@ filelist.update({
     "detection.i": "plugins/medimax/detection",
     "recalage.i": "plugins/medimax/recalage",
     "medipy_app.py": "apps/medipy",
-    "__init__.py": "lib/medipy"
+    "__init__.py": "lib/medipy",
+    "wxVTKRenderWindowInteractor.py": "lib/medipy/gui"
     })
 
 for name, path in filelist.items():

@@ -14,3 +14,21 @@ Traceback (most recent call last):
   File "/Users/sun/workspace/medipy/lib/medipy/gui/wxVTKRenderWindowInteractor.py", line 528, in OnPaint
     self._Iren.GetRenderWindow().SetSize(self.GetSizeTuple())
 TypeError: SetSize() takes exactly 2 arguments (1 given)
+
+
+ERROR:root:Traceback (most recent call last):
+  File "/Users/sun/workspace/medipy/lib/medipy/gui/periodic_progress_dialog.py", line 68, in run
+    self._result = self._target(*self._args, **self._kwargs)
+  File "/Users/sun/workspace/medipy/lib/medipy/io/io.py", line 75, in load
+    images = loader(path, fragment)
+  File "/Users/sun/workspace/medipy/lib/medipy/io/schemes/file.py", line 68, in load
+    loader = loader or get_loader(path)
+  File "/Users/sun/workspace/medipy/lib/medipy/io/schemes/file.py", line 123, in get_loader
+    if loader.can_load() :
+  File "/Users/sun/workspace/medipy/plugins/diffusion/itk_io.py", line 44, in can_load
+    ReaderClass, image_io = self._find_loader()
+  File "/Users/sun/workspace/medipy/plugins/diffusion/itk_io.py", line 206, in _find_loader
+    image_io.GetComponentType()], ndim)
+  File "/Users/sun/workspace/medipy/plugins/diffusion/itk_io.py", line 184, in _find_filter
+    mode, component_type.name, dimensions_count))
+Exception: No Reader for (signed short,4)
