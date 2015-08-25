@@ -7,7 +7,7 @@ http://stackoverflow.com/questions/10952280/execute-windows-batch-command-from-j
 
 
 set WRAPITK="-DWrapITK_DIR=C:\Program Files\ITK\lib\cmake\ITK-4.6\WrapITK"
-set oflib="-Doflog=C:\Program Files\DCMTK\lib\oflog.lib"
+#set oflib="-Doflog=C:\Program Files\DCMTK\lib\oflog.lib"
 set OFLOG="-DOFLOG=C:\Program Files\DCMTK\include\dcmtk\oflog"
 set dcmdsig="-DDCMTK_dcmsign_LIBRARY=C:\Program Files\DCMTK\lib\dcmdsig.lib"
 set Gene="-GVisual Studio 9 2008 Win64"

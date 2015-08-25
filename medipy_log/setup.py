@@ -69,7 +69,7 @@ def setup(project_name, main_script, includes=None, medipy_plugins=None):
     medipy_plugins = medipy_plugins or []
     key = _winreg.OpenKey(
         _winreg.HKEY_LOCAL_MACHINE, 
-        "SOFTWARE\\Microsoft\\VCExpress\\9.0\\Setup\\VC")
+        "SOFTWARE\\Microsoft\\VisualStudio\\9.0\\Setup\\VC")
     vs_root, key_type = _winreg.QueryValueEx(key, "ProductDir")
     key.Close()
     

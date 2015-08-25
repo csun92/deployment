@@ -1,7 +1,7 @@
 import os
 import shutil
 
-medipy_path = "/Users/sun/workspace/medipy/"
+medipy_path = "F:/medipy/"
 src = "./cmake_fixed_files/"
 
 filelist = {}
