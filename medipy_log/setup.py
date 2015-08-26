@@ -15,6 +15,7 @@ import re
 import shutil
 import subprocess
 import sys
+import platform
 import _winreg
 import matplotlib
 
@@ -71,7 +72,7 @@ def setup(project_name, main_script, includes=None, medipy_plugins=None):
         key = _winreg.OpenKey(
             _winreg.HKEY_LOCAL_MACHINE,
             "SOFTWARE\\Microsoft\\VisualStudio\\9.0\\Setup\\VC")
-    elseif(platform.architecture()[0] == '64bit'):
+    elif(platform.architecture()[0] == '64bit'):
         key = _winreg.OpenKey(
             _winreg.HKEY_LOCAL_MACHINE,
             "SOFTWARE\\Wow6432Node\\Microsoft\\VisualStudio\\9.0\\Setup\\VC")
