@@ -57,3 +57,20 @@ make: *** [all] Error 2
 
 
 Implicit instantiation of undefined template 'std::basic_string<char, std::char_traits<char>, std::allocator<char> >'
+
+
+/usr/local/lib/cmake/ITK-4.6/WrapITK/Configuration/Typedefs/pyBase.i:385: Error: Unknown SWIG preprocessor directive: TODO (if this is a block of target language code, delimit it with %{ and %})
+/usr/local/lib/cmake/ITK-4.6/WrapITK/Configuration/Typedefs/pyBase.i:386: Error: Unknown SWIG preprocessor directive: template (if this is a block of target language code, delimit it with %{ and %})
+/usr/local/lib/cmake/ITK-4.6/WrapITK/Configuration/Typedefs/pyBase.i:387: Error: Unknown SWIG preprocessor directive: void (if this is a block of target language code, delimit it with %{ and %})
+/usr/local/lib/cmake/ITK-4.6/WrapITK/Configuration/Typedefs/pyBase.i:388: Error: Unknown SWIG preprocessor directive: const (if this is a block of target language code, delimit it with %{ and %})
+/usr/local/lib/cmake/ITK-4.6/WrapITK/Configuration/Typedefs/pyBase.i:389: Error: Unknown SWIG preprocessor directive: FixedArray (if this is a block of target language code, delimit it with %{ and %})
+/usr/local/lib/cmake/ITK-4.6/WrapITK/Configuration/Typedefs/pyBase.i:385: Error: Unknown SWIG preprocessor directive: TODO (if this is a block of target language code, delimit it with %{ and %})
+/usr/local/lib/cmake/ITK-4.6/WrapITK/Configuration/Typedefs/pyBase.i:386: Error: Unknown SWIG preprocessor directive: template (if this is a block of target language code, delimit it with %{ and %})
+/usr/local/lib/cmake/ITK-4.6/WrapITK/Configuration/Typedefs/pyBase.i:387: Error: Unknown SWIG preprocessor directive: void (if this is a block of target language code, delimit it with %{ and %})
+/usr/local/lib/cmake/ITK-4.6/WrapITK/Configuration/Typedefs/pyBase.i:388: Error: Unknown SWIG preprocessor directive: const (if this is a block of target language code, delimit it with %{ and %})
+/usr/local/lib/cmake/ITK-4.6/WrapITK/Configuration/Typedefs/pyBase.i:389: Error: Unknown SWIG preprocessor directive: FixedArray (if this is a block of target language code, delimit it with %{ and %})
+/usr/local/lib/cmake/ITK-4.6/WrapITK/Configuration/Typedefs/pyBase.i:385: Error: Unknown SWIG preprocessor directive: TODO (if this is a block of target language code, delimit it with %{ and %})
+/usr/local/lib/cmake/ITK-4.6/WrapITK/Configuration/Typedefs/pyBase.i:386: Error: Unknown SWIG preprocessor directive: template (if this is a block of target language code, delimit it with %{ and %})
+/usr/local/lib/cmake/ITK-4.6/WrapITK/Configuration/Typedefs/pyBase.i:387: Error: Unknown SWIG preprocessor directive: void (if this is a block of target language code, delimit it with %{ and %})
+/usr/local/lib/cmake/ITK-4.6/WrapITK/Configuration/Typedefs/pyBase.i:388: Error: Unknown SWIG preprocessor directive: const (if this is a block of target language code, delimit it with %{ and %})
+/usr/local/lib/cmake/ITK-4.6/WrapITK/Configuration/Typedefs/pyBase.i:389: Error: Unknown SWIG preprocessor directive: FixedArray (if this is a block of target language code, delimit it with %{ and %})

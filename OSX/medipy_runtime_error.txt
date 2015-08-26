@@ -32,3 +32,17 @@ ERROR:root:Traceback (most recent call last):
   File "/Users/sun/workspace/medipy/plugins/diffusion/itk_io.py", line 184, in _find_filter
     mode, component_type.name, dimensions_count))
 Exception: No Reader for (signed short,4)
+
+
+Traceback (most recent call last):
+  File "/Users/sun/workspace/medipy/lib/medipy/gui/control/float_interval.py", line 190, in OnText
+    float(self._max_text.GetValue())))
+  File "/Users/sun/workspace/medipy/lib/medipy/gui/control/float_interval.py", line 91, in _set_value
+    self.notify_observers("value")
+  File "/Users/sun/workspace/medipy/lib/medipy/base/observable.py", line 122, in notify_observers
+    self._notify_bound_method_observer(observer, event_info)
+  File "/Users/sun/workspace/medipy/lib/medipy/base/observable.py", line 191, in _notify_bound_method_observer
+    im_func(im_self(), event_info)
+  File "/Users/sun/workspace/medipy/lib/medipy/gui/image/layers_panel.py", line 296, in on_display_range
+    colormap = self._image.get_layer_colormap(self._current_layer)
+AttributeError: 'NoneType' object has no attribute 'get_layer_colormap'
