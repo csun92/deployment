@@ -30,7 +30,7 @@ elseif(${CMAKE_SYSTEM_NAME} MATCHES "Darwin")
       ${CMAKE_SOURCE_DIR}/lib/medipy/base/CMakeFiles/_exception.dir/ExceptionPYTHON_wrap.cxx.o)
 else()
 	swig_link_libraries(dataset_io
-	    dcmdsig ${DCMTK_LIBRARIES} gdcmMSFF wrap pthread)
+	    medipy_base dcmdsig ${DCMTK_LIBRARIES} gdcmMSFF wrap pthread)
 endif()
 
 install_swig_python_module(dataset_io)

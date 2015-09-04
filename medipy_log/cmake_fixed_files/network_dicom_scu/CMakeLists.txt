@@ -40,7 +40,7 @@ if(NOT ${OFLOG} STREQUAL "OFLOG-NOTFOUND")
             ${CMAKE_SOURCE_DIR}/lib/medipy/base/CMakeFiles/_exception.dir/ExceptionPYTHON_wrap.cxx.o)
     else()
         swig_link_libraries(scu
-            dcmdsig ${DCMTK_LIBRARIES} wrap pthread)
+            medipy_base dcmdsig ${DCMTK_LIBRARIES} wrap pthread)
     endif()
     install_swig_python_module(scu)
 endif()
